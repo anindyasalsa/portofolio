@@ -30,6 +30,8 @@ html[data-theme="dark"] {
 
   --accent: #D8B8F0;
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+
+  --nav-background: rgba(20, 18, 28, 0.94);
 }
 
 /* =========================
@@ -54,29 +56,13 @@ html[data-theme="light"] {
 
   --accent: #8755A8;
   --shadow: 0 18px 50px rgba(56, 36, 73, 0.09);
+
+  --nav-background: rgba(250, 247, 252, 0.94);
 }
 
-/* Section labels: 01 / Tentang Saya, 03 / Pengalaman Kerja */
-.kicker {
-  color: var(--accent);
-}
-
-/* Smooth transition when switching themes */
-body,
-header,
-section,
-.project-card,
-.experience-card,
-.skill-card,
-footer {
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-
+/* =========================
+   GLOBAL
+========================= */
 
 * {
   box-sizing: border-box;
@@ -84,6 +70,7 @@ footer {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -100,7 +87,7 @@ body {
   background-color: var(--site-background);
   color: var(--site-on-background);
   border-radius: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 a {
@@ -123,13 +110,38 @@ a {
   margin-inline: auto;
 }
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION - FIXED
+========================= */
+
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px 0;
+
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 15px max(22px, calc((100% - 1120px) / 2));
+
+  background: var(--nav-background);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .brand {
@@ -138,6 +150,7 @@ a {
   gap: 11px;
   font-weight: 800;
   letter-spacing: -.03em;
+  white-space: nowrap;
 }
 
 .brand-mark {
@@ -159,9 +172,14 @@ a {
   color: var(--text-muted);
 }
 
+.nav-links a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
 .nav-links a:hover,
 .text-link:hover {
-  color: var(--site-primary);
+  color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -170,6 +188,7 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .lang-btn {
@@ -183,7 +202,19 @@ a {
   color: var(--site-on-background);
 }
 
-/* HERO */
+/* =========================
+   MAIN OFFSET
+   Agar konten tidak tertutup navbar
+========================= */
+
+main {
+  padding-top: 70px;
+}
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
   position: relative;
   padding: 74px 0 76px;
@@ -201,8 +232,9 @@ a {
   border-radius: 50%;
   right: -100px;
   top: -180px;
-  box-shadow: 0 0 0 55px rgba(255,255,255,.035),
-              0 0 0 110px rgba(255,255,255,.025);
+  box-shadow:
+    0 0 0 55px rgba(255,255,255,.035),
+    0 0 0 110px rgba(255,255,255,.025);
   opacity: var(--site-decoration-opacity);
   pointer-events: none;
 }
@@ -292,7 +324,10 @@ h1 {
   background: transparent;
 }
 
-/* PROFILE */
+/* =========================
+   PROFILE
+========================= */
+
 .profile-card {
   background: rgba(255,255,255,.08);
   border: 1px solid rgba(255,255,255,.18);
@@ -341,7 +376,10 @@ h1 {
   color: rgba(255,255,255,.63);
 }
 
-/* SECTION */
+/* =========================
+   SECTION
+========================= */
+
 .section {
   padding: 78px 0;
 }
@@ -359,7 +397,7 @@ h1 {
 }
 
 .kicker {
-  color: var(--site-primary);
+  color: var(--accent);
   font-size: 11px;
   font-weight: 850;
   letter-spacing: .16em;
@@ -380,7 +418,10 @@ h1 {
   font-size: 14px;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -397,7 +438,10 @@ h1 {
   color: var(--site-on-background);
 }
 
-/* SKILLS */
+/* =========================
+   SKILLS
+========================= */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -430,8 +474,6 @@ h1 {
   font-weight: 850;
   margin-bottom: 13px;
 }
-
-
 
 .skill-icon svg {
   width: 100%;
@@ -472,6 +514,7 @@ h1 {
 }
 
 /* SKILL LOGO COLORS */
+
 .logo-python {
   background: #E3EAF4;
   color: #2D5B86;
@@ -522,7 +565,10 @@ h1 {
   color: #23828B;
 }
 
-/* PROJECT GRID */
+/* =========================
+   PROJECT GRID
+========================= */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
@@ -546,6 +592,7 @@ h1 {
 }
 
 /* PROJECT VISUAL */
+
 .project-visual {
   min-height: 178px;
   padding: 23px;
@@ -588,7 +635,8 @@ h1 {
   margin: 20px 0 0;
 }
 
-/* PROJECT IMAGE - FINAL */
+/* PROJECT IMAGE */
+
 .project-image-wrap {
   position: relative;
   min-height: 250px;
@@ -602,7 +650,6 @@ h1 {
   color: #7c4c81;
 }
 
-/* PROJECT SCREENSHOT */
 .project-image-wrap .project-screenshot {
   position: absolute;
   inset: 0;
@@ -615,6 +662,7 @@ h1 {
 }
 
 /* IMAGE OVERLAY */
+
 .project-image-wrap::after {
   content: "";
   position: absolute;
@@ -630,7 +678,8 @@ h1 {
   pointer-events: none;
 }
 
-/* PROJECT NUMBER - TOP */
+/* PROJECT NUMBER */
+
 .project-image-wrap .project-number {
   position: relative;
   top: auto;
@@ -646,7 +695,8 @@ h1 {
   opacity: 1;
 }
 
-/* PROJECT TITLE - BOTTOM */
+/* PROJECT TITLE */
+
 .project-image-wrap h3 {
   position: relative;
   z-index: 2;
@@ -660,12 +710,12 @@ h1 {
   margin: 0;
 }
 
-/* HIDE PLACEHOLDER */
 .project-image-wrap .screenshot-placeholder {
   display: none !important;
 }
 
 /* PROJECT BODY */
+
 .project-body {
   padding: 23px;
   display: flex;
@@ -726,6 +776,7 @@ h1 {
 }
 
 /* MINI BARS */
+
 .mini-bars {
   position: absolute;
   right: 22px;
@@ -750,7 +801,10 @@ h1 {
 .mini-bars span:nth-child(5) { height: 62%; }
 .mini-bars span:nth-child(6) { height: 100%; }
 
-/* PROCESS */
+/* =========================
+   PROCESS
+========================= */
+
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -779,7 +833,10 @@ h1 {
   margin: 0;
 }
 
-/* EDUCATION */
+/* =========================
+   EDUCATION
+========================= */
+
 .education-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -824,7 +881,10 @@ h1 {
   letter-spacing: .1em;
 }
 
-/* EXPERIENCE */
+/* =========================
+   EXPERIENCE
+========================= */
+
 .experience-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -874,12 +934,18 @@ h1 {
   margin-top: 14px;
 }
 
-/* ORGANIZATION */
+/* =========================
+   ORGANIZATION
+========================= */
+
 .organization-grid .project-visual {
   min-height: 120px;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
+
 .contact {
   background: var(--site-primary);
   color: var(--site-on-primary);
@@ -925,7 +991,10 @@ h1 {
   padding-bottom: 9px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
   padding: 20px 0;
   color: var(--text-muted);
@@ -942,7 +1011,273 @@ footer {
   display: none !important;
 }
 
-/* RESPONSIVE TABLET */
+/* =========================
+   DARK & LIGHT MODE
+========================= */
+
+body,
+#app,
+header,
+.nav,
+section,
+.section,
+.section-soft,
+.about-copy,
+.education-card,
+.experience-card,
+.project,
+.project-body,
+.skill,
+.contact,
+footer,
+.tag,
+.gpa,
+.profile-card,
+#themeToggle,
+.lang-btn {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Theme button */
+
+#themeToggle {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: var(--surface);
+  color: var(--site-on-background);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+#themeToggle:hover,
+.lang-btn:hover {
+  border-color: var(--accent);
+}
+
+/* Theme toggle button */
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--site-on-background);
+  font-size: 21px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+  background: var(--surface-soft);
+}
+
+/* Section headings */
+
+.section h2,
+.section h3,
+.education-card h3,
+.experience-card h3,
+.skill h3,
+.project-body h3 {
+  color: var(--site-on-background);
+}
+
+/* Muted text */
+
+.about-copy,
+.about-copy p,
+.education-card p,
+.experience-card ul,
+.experience-role,
+.experience-date,
+.skill p,
+.project-body p,
+footer {
+  color: var(--text-muted);
+}
+
+/* Cards */
+
+.education-card,
+.experience-card,
+.skill,
+.project {
+  background-color: var(--surface);
+  border-color: var(--line);
+}
+
+/* Section background */
+
+.section-soft {
+  background-color: var(--surface-soft);
+}
+
+/* Technology tags */
+
+.tag {
+  background-color: var(--surface-soft);
+  border-color: var(--line);
+  color: var(--text-muted);
+}
+
+/* Project hover */
+
+.project:hover {
+  box-shadow: var(--shadow);
+}
+
+/* Section kicker */
+
+.section .kicker {
+  color: var(--accent);
+}
+
+/* Profile */
+
+.profile-card {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* App theme */
+
+html[data-theme="dark"] body,
+html[data-theme="light"] body,
+html[data-theme="dark"] #app,
+html[data-theme="light"] #app {
+  background-color: var(--site-background);
+  color: var(--site-on-background);
+}
+
+/* Light theme buttons */
+
+html[data-theme="light"] #themeToggle,
+html[data-theme="light"] .lang-btn {
+  background: var(--surface);
+  color: var(--site-on-background);
+  border-color: var(--line);
+}
+
+/* Light theme skill logos */
+
+html[data-theme="light"] .skill-icon {
+  border-color: var(--line);
+}
+
+/* Light theme links */
+
+html[data-theme="light"] .nav-links a:hover,
+html[data-theme="light"] .text-link:hover {
+  color: var(--accent);
+}
+
+/* Eyebrow light mode */
+
+html[data-theme="light"] .kicker {
+  color: #8755A8 !important;
+}
+
+/* Hero eyebrow light mode */
+
+html[data-theme="light"] #home .eyebrow [data-id="heroEyebrow"] {
+  color: #d3c2e1 !important;
+}
+
+/* Organization dark mode */
+
+html[data-theme="dark"] #organization .experience-card,
+html[data-theme="dark"] #organization .organization-card,
+html[data-theme="dark"] #organization .experience-item {
+  background-color: #201B2A !important;
+  color: #F5F1FA;
+  border-color: #443850;
+}
+
+/* Organization card headings */
+
+html[data-theme="dark"] #organization .experience-card h3,
+html[data-theme="dark"] #organization .organization-card h3,
+html[data-theme="dark"] #organization .experience-item h3 {
+  color: #F5F1FA;
+}
+
+/* Organization card paragraphs */
+
+html[data-theme="dark"] #organization .experience-card p,
+html[data-theme="dark"] #organization .organization-card p,
+html[data-theme="dark"] #organization .experience-item p {
+  color: #B8AEC9;
+}
+
+/* Organization light mode */
+
+html[data-theme="light"] #organization .experience-card,
+html[data-theme="light"] #organization .organization-card,
+html[data-theme="light"] #organization .experience-item {
+  background-color: #FFFFFF !important;
+  color: #292032;
+  border-color: #E1D5EB;
+  box-shadow: 0 8px 24px rgba(56, 36, 73, 0.08);
+}
+
+/* Project titles */
+
+html[data-theme="light"] #projects .project h3,
+html[data-theme="light"] #projects .project-title {
+  color: #ffffff !important;
+}
+
+/* Project descriptions */
+
+html[data-theme="light"] #projects .project p,
+html[data-theme="light"] #projects .project-description {
+  color: #6F647B;
+}
+
+/* Project screenshot overlay */
+
+.project-image-wrap::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    transparent 35%,
+    transparent 55%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+/* =========================
+   CLICKABLE PROJECT CARD
+========================= */
+
+#projects .project[role="link"] {
+  cursor: pointer;
+}
+
+#projects .project[role="link"]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
 @media (max-width: 800px) {
   .nav-links {
     display: none;
@@ -993,7 +1328,10 @@ footer {
   }
 }
 
-/* RESPONSIVE MOBILE */
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
 @media (max-width: 640px) {
   .experience-top {
     flex-direction: column;
@@ -1008,6 +1346,15 @@ footer {
 @media (max-width: 540px) {
   .container {
     width: min(100% - 30px,1120px);
+  }
+
+  .nav {
+    width: 100%;
+    padding: 12px 15px;
+  }
+
+  main {
+    padding-top: 60px;
   }
 
   .brand {
@@ -1057,7 +1404,10 @@ footer {
   }
 }
 
-/* LANGUAGE VISIBILITY */
+/* =========================
+   LANGUAGE VISIBILITY
+========================= */
+
 .lang-en {
   display: none;
 }
@@ -1070,165 +1420,10 @@ html[lang="en"] .lang-id {
   display: none;
 }
 
-
 /* =========================
-   DARK & LIGHT MODE FIX
-   Menjaga layout asli
+   REDUCED MOTION
 ========================= */
 
-/* Transisi warna tanpa mengubah ukuran atau susunan elemen */
-body,
-#app,
-header,
-.nav,
-.section,
-.section-soft,
-.about-copy,
-.education-card,
-.experience-card,
-.project,
-.project-body,
-.skill,
-.contact,
-footer,
-.tag,
-.gpa,
-.profile-card,
-#themeToggle,
-.lang-btn {
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-/* Warna tombol tema */
-#themeToggle {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 8px 12px;
-  background: var(--surface);
-  color: var(--site-on-background);
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 750;
-  white-space: nowrap;
-}
-
-#themeToggle:hover,
-.lang-btn:hover {
-  border-color: var(--accent);
-}
-
-/* Warna teks link navigasi */
-.nav-links a {
-  color: var(--text-muted);
-}
-
-.nav-links a:hover,
-.text-link:hover {
-  color: var(--accent);
-}
-
-/* Warna heading dan teks section mengikuti tema */
-.section h2,
-.section h3,
-.education-card h3,
-.experience-card h3,
-.skill h3,
-.project-body h3 {
-  color: var(--site-on-background);
-}
-
-.about-copy,
-.about-copy p,
-.education-card p,
-.experience-card ul,
-.experience-role,
-.experience-date,
-.skill p,
-.project-body p,
-footer {
-  color: var(--text-muted);
-}
-
-/* Kartu mengikuti warna tema */
-.education-card,
-.experience-card,
-.skill,
-.project {
-  background-color: var(--surface);
-  border-color: var(--line);
-}
-
-/* Latar belakang section */
-.section-soft {
-  background-color: var(--surface-soft);
-}
-
-/* Tag teknologi */
-.tag {
-  background-color: var(--surface-soft);
-  border-color: var(--line);
-  color: var(--text-muted);
-}
-
-/* Hover kartu */
-.project:hover {
-  box-shadow: var(--shadow);
-}
-
-/* Kicker di section */
-.section .kicker {
-  color: var(--accent);
-}
-
-/* Profil: foto tetap mengikuti ukuran asli */
-.profile-card {
-  border-color: rgba(255, 255, 255, 0.18);
-}
-
-/* Memastikan elemen halaman utama memakai warna tema */
-html[data-theme="dark"] body,
-html[data-theme="light"] body,
-html[data-theme="dark"] #app,
-html[data-theme="light"] #app {
-  background-color: var(--site-background);
-  color: var(--site-on-background);
-}
-
-/* Screenshot proyek tetap memakai overlay gelap agar judul terbaca */
-.project-image-wrap::after {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.55),
-    transparent 35%,
-    transparent 55%,
-    rgba(0, 0, 0, 0.8)
-  );
-}
-
-/* Tema terang: tombol navigasi tetap jelas */
-html[data-theme="light"] #themeToggle,
-html[data-theme="light"] .lang-btn {
-  background: var(--surface);
-  color: var(--site-on-background);
-  border-color: var(--line);
-}
-
-/* Tema terang: logo skill tetap mempertahankan warna masing-masing */
-html[data-theme="light"] .skill-icon {
-  border-color: var(--line);
-}
-
-/* Tema terang: hover link */
-html[data-theme="light"] .nav-links a:hover,
-html[data-theme="light"] .text-link:hover {
-  color: var(--accent);
-}
-
-/* Menghormati preferensi pengguna yang mengurangi animasi */
 @media (prefers-reduced-motion: reduce) {
   body,
   #app,
@@ -1242,81 +1437,4 @@ html[data-theme="light"] .text-link:hover {
   .lang-btn {
     transition: none;
   }
-}
-
-/* Pengalaman Organisasi - Dark Mode */
-html[data-theme="dark"] #organization .experience-card,
-html[data-theme="dark"] #organization .organization-card,
-html[data-theme="dark"] #organization .experience-item {
-    background-color: #201B2A !important;
-    color: #F5F1FA;
-    border-color: #443850;
-}
-
-/* Teks di dalam card */
-html[data-theme="dark"] #organization .experience-card h3,
-html[data-theme="dark"] #organization .organization-card h3,
-html[data-theme="dark"] #organization .experience-item h3 {
-    color: #100a17;
-}
-
-html[data-theme="dark"] #organization .experience-card p,
-html[data-theme="dark"] #organization .organization-card p,
-html[data-theme="dark"] #organization .experience-item p {
-    color: #B8AEC9;
-}
-
-/* Judul proyek - Light Mode */
-html[data-theme="light"] #projects .project h3,
-html[data-theme="light"] #projects .project-title {
-    color: #ffffff !important;
-}
-
-/* Deskripsi proyek - Light Mode */
-html[data-theme="light"] #projects .project p,
-html[data-theme="light"] #projects .project-description {
-    color: #6F647B;
-}
-
-
-/* Tombol Dark/Light Mode */
-.theme-toggle {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--line);
-    border-radius: 50%;
-    background: var(--surface);
-    color: var(--site-on-background);
-    font-size: 21px;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease,
-                border-color 0.3s ease, transform 0.2s ease;
-}
-
-.theme-toggle:hover {
-    transform: rotate(15deg);
-    background: var(--surface-soft);
-}
-
-/* Eyebrow - Light Mode */
-html[data-theme="light"] .kicker {
-    color: #8755A8 !important;
-}
-
-/* Tulisan Portofolio - Light Mode */
-html[data-theme="light"] #home .eyebrow [data-id="heroEyebrow"] {
-    color: #d3c2e1 !important;
-}
-
-/* Card Pengalaman Organisasi - Light Mode */
-html[data-theme="light"] #organization .experience-card,
-html[data-theme="light"] #organization .organization-card,
-html[data-theme="light"] #organization .experience-item {
-    background-color: #FFFFFF !important;
-    color: #292032;
-    border-color: #E1D5EB;
-    box-shadow: 0 8px 24px rgba(56, 36, 73, 0.08);
 }
