@@ -100,3 +100,47 @@ document.querySelectorAll('.project-screenshot').forEach(img => {
  if (img.complete && img.naturalWidth > 0) showImage();
 });
 
+
+// =====================================
+// PROJECT CARD CLICKABLE
+// =====================================
+
+const projectDetailRoutes = [
+  "sales-performance",
+  "coffee-sales",
+  "electronics-sales",
+  "pcos-classification",
+  "elderly-health",
+  "financial-property",
+  "nutriguide",
+  "gofast",
+  "cookify"
+];
+
+document.querySelectorAll("#projects .project-grid > .project")
+.forEach((card, index) => {
+
+  const projectId = projectDetailRoutes[index];
+
+  if (!projectId) return;
+
+  card.setAttribute("role", "link");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", "View project details");
+
+  function openProject() {
+    window.location.href = `project-detail.html?id=${projectId}`;
+  }
+
+  card.addEventListener("click", openProject);
+
+  card.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openProject();
+    }
+
+  });
+
+});
