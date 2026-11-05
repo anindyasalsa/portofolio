@@ -11,10 +11,8 @@ const projectDetails = {
   "sales-performance": {
     title: "Sales Performance Analysis",
     category: "PROJECT 01 · POWER BI",
-
-    leadId: "Dashboard interaktif untuk menganalisis performa penjualan retail secara menyeluruh melalui berbagai indikator bisnis. Proyek ini mengeksplorasi kontribusi produk, pelanggan, toko, dan periode penjualan untuk memberikan gambaran mengenai kondisi serta perkembangan bisnis.",
-    leadEn: "An interactive dashboard designed to analyze retail sales performance through various business indicators. This project explores product, customer, store, and sales period contributions to provide insights into overall business conditions and performance trends.",
-
+    leadId: "Proyek ini berfokus pada analisis performa penjualan untuk memahami kontribusi produk, toko, pelanggan, dan berbagai faktor yang memengaruhi pencapaian bisnis. Melalui pengolahan data dan visualisasi menggunakan Power BI, proyek ini menyajikan informasi penjualan dalam dashboard interaktif yang membantu pengguna mengevaluasi performa bisnis dari berbagai sudut pandang.",
+    leadEn: "This project focuses on sales performance analysis to understand the contributions of products, stores, customers, and various factors influencing business performance. Through data processing and visualization using Power BI, the project presents sales information in an interactive dashboard that helps users evaluate business performance from different perspectives.",
     categoryInfo: "Data Analytics · Dashboard",
     tools: "Power BI, Power Query, DAX",
     focus: "Sales Performance Analysis",
@@ -51,14 +49,14 @@ const projectDetails = {
       ["DAX", "Perhitungan Data", "Data Calculations", "⌘"]
     ],
 
-    overviewId: "Proyek ini berfokus pada pengolahan dan analisis data transaksi retail untuk memahami performa penjualan dari berbagai dimensi bisnis. Dataset yang terdiri dari lebih dari 56.000 baris data dipersiapkan melalui proses data cleaning dan transformation menggunakan Power Query. Selanjutnya, data dimanfaatkan untuk menganalisis omzet, laba kotor, margin keuntungan, serta kontribusi penjualan berdasarkan kategori produk, toko, pelanggan, karyawan, dan waktu. Hasil analisis disajikan dalam dashboard Power BI yang memungkinkan pengguna mengeksplorasi informasi secara lebih terstruktur dan interaktif.",
-    overviewEn: "This project focuses on processing and analyzing retail transaction data to understand sales performance across multiple business dimensions. The dataset, containing more than 56,000 rows, was prepared through data cleaning and transformation using Power Query. The processed data was then used to analyze revenue, gross profit, profit margin, and sales contributions across product categories, stores, customers, employees, and time periods. The findings are presented in a Power BI dashboard that allows users to explore information in a structured and interactive way.",
+    overviewId: "Sales Performance Analysis merupakan proyek analisis data penjualan yang menggunakan dataset dengan lebih dari 56.000 baris transaksi. Data diolah untuk mengeksplorasi berbagai aspek penjualan, mulai dari performa produk, kategori, toko, wilayah, pelanggan, hingga periode transaksi. Proyek ini juga mencakup proses pembersihan dan transformasi data menggunakan Power Query sebelum disajikan dalam bentuk visualisasi interaktif.",
+    overviewEn: "Sales Performance Analysis is a sales data analytics project using a dataset containing more than 56,000 transaction records. The data is processed to explore various aspects of sales, including product performance, categories, stores, regions, customers, and transaction periods. The project also involves data cleaning and transformation using Power Query before presenting the results through interactive visualizations.",
 
-    objectiveId: "Mengembangkan dashboard analisis penjualan yang mampu menyajikan informasi bisnis secara menyeluruh dan mudah dipahami. Analisis dilakukan untuk mengidentifikasi kategori produk dengan kontribusi penjualan terbesar, memahami karakteristik segmen pelanggan, membandingkan performa antarwilayah dan toko, serta mengevaluasi perubahan kinerja penjualan dari waktu ke waktu. Melalui pendekatan ini, pengguna dapat memperoleh gambaran yang lebih jelas mengenai faktor-faktor yang memengaruhi performa bisnis.",
-    objectiveEn: "To develop a sales analytics dashboard that presents comprehensive and easy-to-understand business information. The analysis aims to identify product categories with the highest sales contributions, understand customer segment characteristics, compare performance across regions and stores, and evaluate changes in sales performance over time. This approach provides a clearer understanding of the factors influencing business performance.",
+    objectiveId: "Proyek ini bertujuan untuk memberikan gambaran menyeluruh mengenai performa penjualan dan profitabilitas bisnis. Analisis dilakukan untuk mengidentifikasi produk dan kategori dengan kontribusi terbesar, membandingkan performa penjualan antar toko, memahami karakteristik pelanggan, serta mengevaluasi perubahan kinerja berdasarkan waktu. Dashboard dirancang agar informasi tersebut dapat diakses dan dianalisis secara lebih mudah melalui indikator serta filter interaktif.",
+    objectiveEn: "This project aims to provide a comprehensive overview of business sales performance and profitability. The analysis identifies products and categories with the highest contributions, compares sales performance across stores, explores customer characteristics, and evaluates performance changes over time. The dashboard is designed to make this information easier to access and analyze through interactive indicators and filters.",
 
-    outcomeId: "Menghasilkan dashboard Power BI interaktif yang terdiri dari tiga halaman dengan lebih dari 25 visualisasi. Dashboard menyajikan berbagai indikator, termasuk omzet, laba kotor, dan margin keuntungan, serta analisis berdasarkan produk, pelanggan, toko, karyawan, dan waktu. Hasil eksplorasi menunjukkan bahwa kategori Televisi memberikan kontribusi omzet sekitar Rp92 miliar, sedangkan segmen pelanggan Regular menyumbang sekitar Rp149 miliar. Dashboard ini membantu menyajikan informasi penjualan secara lebih informatif untuk mendukung evaluasi performa bisnis.",
-    outcomeEn: "Produced an interactive Power BI dashboard consisting of three pages with more than 25 visualizations. It presents various indicators, including revenue, gross profit, and profit margin, alongside analyses of products, customers, stores, employees, and time. The findings show that the Television category contributed approximately IDR 92 billion in revenue, while the Regular customer segment accounted for around IDR 149 billion. The dashboard provides informative sales insights to support business performance evaluation.",
+    outcomeId: "Menghasilkan dashboard Power BI interaktif yang terdiri dari 3 halaman dengan lebih dari 25 visualisasi. Dashboard menyajikan informasi mengenai omzet, laba kotor, margin keuntungan, kontribusi produk, performa toko, dan karakteristik pelanggan. Hasil analisis menunjukkan bahwa kategori Televisi menjadi kontributor omzet terbesar dengan nilai sekitar Rp92 miliar, sedangkan segmen pelanggan Regular menyumbang omzet sekitar Rp149 miliar.",
+    outcomeEn: "The project produced an interactive Power BI dashboard consisting of 3 pages with more than 25 visualizations. The dashboard presents information on revenue, gross profit, profit margin, product contributions, store performance, and customer characteristics. The analysis shows that the Television category generated the highest revenue contribution at approximately IDR 92 billion, while the Regular customer segment accounted for around IDR 149 billion.",
 
     processId: [
       ["01", "Data Inspection", "Memeriksa struktur, tipe data, nilai kosong, dan konsistensi dataset."],
@@ -74,7 +72,10 @@ const projectDetails = {
       ["04", "Visualization", "Built DAX measures, indicators, and interactive dashboards."]
     ],
 
-    images: ["images/projects/sales-overview.jpeg"]
+    images: ["images/projects/sales-overview.jpeg",
+      "images/projects/sales-overview2.png", 
+      "images/projects/sales-overview3.jpeg"
+    ]
   },
 
 
@@ -85,10 +86,8 @@ const projectDetails = {
   "coffee-sales": {
     title: "Coffee Sales Analysis",
     category: "PROJECT 02 · POWER BI",
-
-    leadId: "Dashboard analisis penjualan kopi yang mengeksplorasi tren transaksi dan profitabilitas berdasarkan produk, cabang, kategori, serta periode waktu. Proyek ini membantu memahami perubahan performa penjualan dan mengidentifikasi pola bisnis melalui visualisasi data interaktif.",
-    leadEn: "A coffee sales analytics dashboard that explores transaction trends and profitability across products, branches, categories, and time periods. This project helps identify sales performance changes and business patterns through interactive data visualizations.",
-
+    leadId: "Proyek ini mengeksplorasi data penjualan kopi untuk memahami pola transaksi, perkembangan penjualan, serta profitabilitas dari berbagai cabang dan kategori produk. Dengan memanfaatkan Power BI, data dalam jumlah besar diolah dan divisualisasikan menjadi dashboard interaktif yang memberikan gambaran mengenai performa bisnis dari waktu ke waktu.",
+    leadEn: "This project explores coffee sales data to understand transaction patterns, sales development, and profitability across different branches and product categories. Using Power BI, large volumes of data are processed and visualized into an interactive dashboard that provides an overview of business performance over time.",
     categoryInfo: "Data Analytics · Dashboard",
     tools: "Power BI, Power Query, DAX",
     focus: "Product and Branch Sales Analysis",
@@ -125,14 +124,14 @@ const projectDetails = {
       ["4", "Tahapan Analisis", "Analysis Stages", "⌘"]
     ],
 
-    overviewId: "Proyek ini berfokus pada pengolahan dan analisis lebih dari 303.000 baris data transaksi penjualan kopi untuk memahami pola penjualan dan profitabilitas bisnis. Data dipersiapkan melalui proses cleaning dan transformation menggunakan Power Query, kemudian dianalisis berdasarkan produk, cabang, kategori, serta periode waktu. Analisis juga mencakup perbandingan performa penjualan dan indikator keuntungan untuk melihat perkembangan bisnis dari waktu ke waktu. Seluruh hasil pengolahan disajikan dalam dashboard Power BI yang terbagi menjadi tiga halaman.",
-    overviewEn: "This project focuses on processing and analyzing more than 303,000 rows of coffee sales transactions to understand sales patterns and business profitability. The data was prepared through cleaning and transformation using Power Query, then analyzed by product, branch, category, and time period. The analysis also covers sales performance comparisons and profitability indicators to evaluate business development over time. All findings are presented in a Power BI dashboard consisting of three pages.",
+    overviewId: "Coffee Sales Analysis merupakan proyek analisis data menggunakan dataset dengan lebih dari 303.000 baris transaksi penjualan. Proyek ini mencakup proses pembersihan dan transformasi data menggunakan Power Query, kemudian dilanjutkan dengan analisis berdasarkan waktu, produk, kategori, dan cabang. Data tersebut digunakan untuk mengevaluasi perkembangan penjualan serta profitabilitas bisnis kopi.",
+    overviewEn: "Coffee Sales Analysis is a data analytics project using a dataset containing more than 303,000 sales transactions. The project includes data cleaning and transformation using Power Query, followed by analysis based on time, products, categories, and branches. The data is used to evaluate sales development and the profitability of the coffee business.",
 
-    objectiveId: "Menganalisis pola penjualan dan mengevaluasi performa bisnis berdasarkan produk serta cabang. Proyek ini bertujuan untuk mengetahui perubahan penjualan dari waktu ke waktu, membandingkan kontribusi setiap kategori, serta mengidentifikasi periode yang menunjukkan perubahan signifikan pada profitabilitas. Hasil analisis diharapkan dapat memberikan gambaran mengenai kondisi penjualan dan membantu mengidentifikasi aspek bisnis yang memerlukan evaluasi lebih lanjut.",
-    objectiveEn: "To analyze sales patterns and evaluate business performance across products and branches. This project aims to identify changes in sales over time, compare category contributions, and highlight periods showing significant changes in profitability. The analysis provides an overview of sales conditions and helps identify business aspects that may require further evaluation.",
+    objectiveId: "Proyek ini bertujuan untuk mengidentifikasi tren penjualan dan memahami faktor yang memengaruhi performa setiap cabang. Analisis juga difokuskan pada perbandingan kontribusi produk dan kategori, perubahan penjualan berdasarkan periode, serta hubungan antara perkembangan penjualan dan profitabilitas. Hasilnya diharapkan dapat memberikan informasi yang lebih terstruktur untuk mengevaluasi kinerja bisnis.",
+    objectiveEn: "This project aims to identify sales trends and understand the factors influencing the performance of each branch. The analysis also focuses on comparing product and category contributions, examining sales changes across periods, and exploring the relationship between sales development and profitability. The results are intended to provide structured information for evaluating business performance.",
 
-    outcomeId: "Menghasilkan dashboard Power BI interaktif dengan tiga halaman dan 17 visualisasi yang mengolah lebih dari 303.000 baris data transaksi. Dashboard memungkinkan eksplorasi penjualan berdasarkan produk, cabang, kategori, dan periode waktu. Hasil analisis menunjukkan adanya peningkatan penjualan sepanjang 2025 menuju Oktober, sementara gross profit margin mengalami penurunan tajam pada Juli. Temuan tersebut memberikan gambaran mengenai perbedaan perkembangan penjualan dan profitabilitas yang dapat menjadi bahan evaluasi bisnis.",
-    outcomeEn: "Produced an interactive Power BI dashboard with three pages and 17 visualizations, processing more than 303,000 transaction records. The dashboard enables sales exploration by product, branch, category, and time period. The analysis shows an increase in sales throughout 2025 toward October, while gross profit margin experienced a sharp decline in July. These findings highlight differences between sales growth and profitability that can be used for further business evaluation.",
+    outcomeId: "Menghasilkan dashboard Power BI interaktif yang terdiri dari 3 halaman dengan 17 visualisasi. Dashboard menampilkan perkembangan penjualan, gross profit margin, performa cabang, serta kontribusi produk dan kategori. Salah satu temuan analisis menunjukkan bahwa penjualan selama 2025 meningkat menuju Oktober, sementara gross profit margin mengalami penurunan tajam pada Juli. Temuan tersebut dapat digunakan sebagai dasar untuk mengevaluasi perubahan performa bisnis.",
+    outcomeEn: "The project produced an interactive Power BI dashboard consisting of 3 pages with 17 visualizations. The dashboard presents sales trends, gross profit margin, branch performance, and product and category contributions. One of the findings shows that sales in 2025 increased toward October, while gross profit margin experienced a sharp decline in July. These findings can serve as a basis for evaluating changes in business performance.",
 
     processId: [
       ["01", "Data Inspection", "Memahami kolom transaksi, produk, dan cabang serta memeriksa kualitas data."],
@@ -148,7 +147,10 @@ const projectDetails = {
       ["04", "Visualization", "Built visualizations and interactive filters in Power BI."]
     ],
 
-    images: ["images/projects/coffee-sales.jpeg"]
+    images: ["images/projects/coffee-sales.jpeg",
+      "images/projects/coffee-sales2.jpeg",
+      "images/projects/coffee-sales3.jpeg"
+    ]
   },
 
 
@@ -159,13 +161,15 @@ const projectDetails = {
   "electronics-sales": {
     title: "Electronics Sales Analysis",
     category: "PROJECT 03 · GOOGLE DATA STUDIO",
-
-    leadId: "Dashboard analisis transaksi penjualan produk elektronik untuk mengevaluasi perkembangan penjualan, karakteristik pelanggan, dan distribusi transaksi. Visualisasi interaktif digunakan untuk mengeksplorasi informasi berdasarkan periode, wilayah, segmen pelanggan, serta metode pembayaran.",
-    leadEn: "An electronics sales analytics dashboard designed to evaluate sales trends, customer characteristics, and transaction distribution. Interactive visualizations explore information by period, region, customer segment, and payment method.",
-
+    leadId: "Proyek ini berfokus pada eksplorasi data transaksi penjualan elektronik untuk memahami perkembangan penjualan, kontribusi wilayah, serta karakteristik pelanggan. Data divisualisasikan menggunakan Google Data Studio ke dalam dashboard interaktif sehingga informasi mengenai performa penjualan dapat ditinjau melalui berbagai indikator dan filter.",
+    leadEn: "This project focuses on exploring electronics sales transaction data to understand sales development, regional contributions, and customer characteristics. The data is visualized using Google Data Studio in an interactive dashboard, allowing sales performance information to be explored through various indicators and filters.",
     categoryInfo: "Data Analytics · Dashboard",
     tools: "Google Data Studio",
     focus: "Sales and Customer Analysis",
+    projectType: "dashboard",
+    externalUrl: "https://datastudio.google.com/s/rc6PfDSGrqs",
+    actionLabelId: "Lihat Dashboard",
+    actionLabelEn: "View Dashboard",
 
     focusCard: {
       titleId: "Analisis Penjualan Elektronik",
@@ -199,14 +203,14 @@ const projectDetails = {
       ["Interactive", "Filter Dashboard", "Dashboard Filters", "⌘"]
     ],
 
-    overviewId: "Proyek ini mengolah 4.950+ data transaksi penjualan elektronik untuk mengeksplorasi pola penjualan dan karakteristik pelanggan. Analisis mencakup perkembangan penjualan berdasarkan periode, distribusi transaksi antarwilayah, segmentasi pelanggan, frekuensi pembelian, serta metode pembayaran yang digunakan. Data disajikan melalui Google Data Studio dalam satu halaman dashboard dengan berbagai visualisasi dan filter interaktif, sehingga pengguna dapat melihat informasi penjualan berdasarkan dimensi yang dibutuhkan.",
-    overviewEn: "This project processes more than 4,950 electronics sales transactions to explore sales patterns and customer characteristics. The analysis covers sales trends over time, regional transaction distribution, customer segmentation, purchase frequency, and payment methods. The data is presented through a one-page Google Data Studio dashboard with various visualizations and interactive filters, allowing users to explore sales information across different dimensions.",
+    overviewId: "Electronics Sales Analytics merupakan proyek analisis data yang menggunakan dataset dengan lebih dari 4.950 transaksi penjualan. Analisis mencakup perkembangan penjualan berdasarkan periode, distribusi transaksi berdasarkan wilayah, performa produk, segmentasi pelanggan, frekuensi pembelian, serta metode pembayaran. Data kemudian disajikan melalui dashboard yang dilengkapi visualisasi dan filter interaktif.",
+    overviewEn: "Electronics Sales Analytics is a data analytics project using a dataset containing more than 4,950 sales transactions. The analysis covers sales development over time, transaction distribution by region, product performance, customer segmentation, purchase frequency, and payment methods. The data is then presented through a dashboard equipped with visualizations and interactive filters.",
 
-    objectiveId: "Menyajikan informasi penjualan elektronik secara terstruktur agar pengguna dapat memahami tren transaksi dan karakteristik pelanggan. Analisis bertujuan untuk mengidentifikasi perubahan penjualan antarperiode, mengetahui wilayah dengan kontribusi penjualan tertinggi, mengeksplorasi pola pembelian pelanggan, serta membandingkan penggunaan metode pembayaran. Dashboard juga dirancang agar informasi dapat dieksplorasi dengan lebih fleksibel melalui filter interaktif.",
-    objectiveEn: "To present electronics sales information in a structured way so users can understand transaction trends and customer characteristics. The analysis aims to identify changes in sales across periods, determine regions with the highest sales contributions, explore customer purchasing patterns, and compare payment method usage. The dashboard is also designed to provide flexible data exploration through interactive filters.",
+    objectiveId: "Proyek ini bertujuan untuk memahami pola dan perkembangan penjualan elektronik berdasarkan waktu, wilayah, produk, dan karakteristik pelanggan. Analisis dilakukan untuk mengetahui wilayah dengan kontribusi penjualan tertinggi, mengidentifikasi perubahan tren penjualan, serta mengeksplorasi pola transaksi dan preferensi pelanggan. Dashboard juga dirancang untuk memudahkan pengguna dalam membandingkan data melalui filter yang tersedia.",
+    objectiveEn: "This project aims to understand electronics sales patterns and development based on time, region, products, and customer characteristics. The analysis identifies regions with the highest sales contributions, examines changes in sales trends, and explores transaction patterns and customer preferences. The dashboard is also designed to help users compare data through available filters.",
 
-    outcomeId: "Menghasilkan dashboard Google Data Studio satu halaman dengan lebih dari 10 visualisasi berdasarkan 4.950+ transaksi. Dashboard mencakup analisis tren penjualan, distribusi wilayah, segmen pelanggan, frekuensi transaksi, dan metode pembayaran. Hasil analisis menunjukkan bahwa penjualan mengalami tren penurunan dari 2023 hingga 2025, sementara DKI Jakarta menjadi wilayah dengan penjualan tertinggi. Informasi tersebut memberikan dasar untuk mengevaluasi perkembangan penjualan dan memahami distribusi pelanggan.",
-    outcomeEn: "Produced a one-page Google Data Studio dashboard with more than 10 visualizations based on over 4,950 transactions. It covers sales trends, regional distribution, customer segments, transaction frequency, and payment methods. The analysis shows a declining sales trend from 2023 to 2025, while DKI Jakarta recorded the highest sales. These insights provide a basis for evaluating sales development and understanding customer distribution.",
+    outcomeId: "Menghasilkan dashboard Google Data Studio dalam satu halaman dengan lebih dari 10 visualisasi dan filter interaktif. Dashboard menyajikan ringkasan penjualan, tren transaksi, distribusi wilayah, performa produk, serta karakteristik pelanggan. Hasil analisis menunjukkan adanya tren penurunan penjualan sejak 2023 hingga 2025, sementara DKI Jakarta menjadi wilayah dengan penjualan tertinggi.",
+    outcomeEn: "The project produced a Google Data Studio dashboard consisting of one page with more than 10 visualizations and interactive filters. The dashboard presents sales summaries, transaction trends, regional distribution, product performance, and customer characteristics. The analysis reveals a declining sales trend from 2023 to 2025, while DKI Jakarta recorded the highest sales.",
 
     processId: [
       ["01", "Data Understanding", "Memahami struktur transaksi dan atribut pelanggan serta produk."],
@@ -233,13 +237,16 @@ const projectDetails = {
   "pcos-classification": {
     title: "PCOS Classification",
     category: "PROJECT 04 · MACHINE LEARNING",
-
-    leadId: "Penelitian klasifikasi Polycystic Ovary Syndrome (PCOS) menggunakan algoritma Support Vector Machine dengan pendekatan Genetic Algorithm untuk seleksi fitur dan Bayesian Optimization untuk optimasi hyperparameter. Proyek ini mengevaluasi kombinasi metode tersebut dalam meningkatkan performa model klasifikasi.",
-    leadEn: "A Polycystic Ovary Syndrome (PCOS) classification study using Support Vector Machine with Genetic Algorithm for feature selection and Bayesian Optimization for hyperparameter optimization. This project evaluates the combination of these methods to improve classification model performance.",
-
+    leadId: "Proyek ini merupakan penelitian klasifikasi Polycystic Ovary Syndrome (PCOS) menggunakan algoritma Support Vector Machine (SVM). Penelitian menggabungkan Genetic Algorithm untuk seleksi fitur dan Bayesian Optimization untuk optimasi hyperparameter guna memperoleh model klasifikasi dengan performa yang optimal. Hasil penelitian kemudian diimplementasikan dalam aplikasi berbasis web menggunakan Streamlit.",
+    leadEn: "This project is a Polycystic Ovary Syndrome (PCOS) classification study using the Support Vector Machine (SVM) algorithm. The research combines Genetic Algorithm for feature selection and Bayesian Optimization for hyperparameter tuning to obtain an optimized classification model. The research results are then implemented in a web-based application using Streamlit.",
     categoryInfo: "Machine Learning · Classification",
     tools: "Python, SVM, Genetic Algorithm, Bayesian Optimization",
     focus: "Classification Model Development",
+
+    projectType: "website",
+    externalUrl: "https://pcos-prediction-app.streamlit.app/",
+    actionLabelId: "Lihat Aplikasi",
+    actionLabelEn: "View Application",
 
     focusCard: {
       titleId: "Model Insights",
@@ -267,50 +274,55 @@ const projectDetails = {
     },
 
     metrics: [
-      ["541", "Data", "Records", "▤"],
-      ["44", "Fitur", "Features", "▧"],
-      ["SVM", "Algoritma", "Algorithm", "▥"],
-      ["GA + BO", "Optimasi", "Optimization", "⌘"]
+      ["92.66%", "Akurasi Model", "Model Accuracy", "▤"],
+      ["96.35%", "ROC-AUC", "ROC-AUC", "▧"],
+      ["541", "Data Pasien", "Patient Records", "▥"],
+      ["36", "Fitur Terpilih", "Selected Features", "⌘"]
     ],
 
-    overviewId: "Proyek tugas akhir ini mengembangkan model machine learning untuk mengklasifikasikan kondisi PCOS berdasarkan dataset yang terdiri dari 541 data dan 44 fitur. Penelitian menggunakan Support Vector Machine (SVM) sebagai algoritma utama, Genetic Algorithm (GA) untuk menyeleksi fitur yang relevan, serta Bayesian Optimization (BO) untuk mencari kombinasi hyperparameter yang optimal. Tahapan penelitian mencakup persiapan dataset, seleksi fitur, pelatihan model, optimasi, dan evaluasi performa menggunakan metrik klasifikasi.",
-    overviewEn: "This final project develops a machine learning model to classify PCOS using a dataset containing 541 records and 44 features. The research uses Support Vector Machine (SVM) as the main algorithm, Genetic Algorithm (GA) to select relevant features, and Bayesian Optimization (BO) to identify optimal hyperparameter combinations. The research stages include dataset preparation, feature selection, model training, optimization, and performance evaluation using classification metrics.",
+    overviewId: "Penelitian ini menggunakan dataset PCOS yang terdiri dari 541 data dan 44 fitur. Data dianalisis untuk mengidentifikasi pola yang berkaitan dengan klasifikasi PCOS dan non-PCOS. Tahapan penelitian meliputi persiapan data, seleksi fitur menggunakan Genetic Algorithm, pemodelan Support Vector Machine, serta optimasi hyperparameter menggunakan Bayesian Optimization.",
+    overviewEn: "This research uses a PCOS dataset containing 541 records and 44 features. The data is analyzed to identify patterns related to PCOS and non-PCOS classification. The research stages include data preparation, feature selection using Genetic Algorithm, Support Vector Machine modeling, and hyperparameter optimization using Bayesian Optimization.",
 
-    objectiveId: "Mengembangkan dan mengevaluasi model klasifikasi PCOS dengan mengombinasikan seleksi fitur dan optimasi hyperparameter. Penelitian ini bertujuan untuk mengurangi jumlah fitur yang digunakan tanpa mengabaikan informasi penting dalam dataset, sekaligus mencari konfigurasi model yang memberikan performa klasifikasi terbaik. Evaluasi dilakukan untuk mengetahui efektivitas kombinasi Genetic Algorithm dan Bayesian Optimization terhadap model Support Vector Machine.",
-    objectiveEn: "To develop and evaluate a PCOS classification model by combining feature selection and hyperparameter optimization. This research aims to reduce the number of features without overlooking important dataset information while identifying model configurations that provide the best classification performance. The evaluation examines the effectiveness of combining Genetic Algorithm and Bayesian Optimization with Support Vector Machine.",
+    objectiveId: "Penelitian ini bertujuan mengembangkan model klasifikasi PCOS dengan memanfaatkan seleksi fitur dan optimasi parameter model. Genetic Algorithm digunakan untuk memilih fitur yang relevan, sedangkan Bayesian Optimization digunakan untuk mencari kombinasi hyperparameter terbaik pada model SVM. Pendekatan ini diharapkan dapat meningkatkan kemampuan model dalam membedakan data PCOS dan non-PCOS.",
+    objectiveEn: "This research aims to develop a PCOS classification model by applying feature selection and model parameter optimization. Genetic Algorithm is used to select relevant features, while Bayesian Optimization searches for the best hyperparameter combination for the SVM model. This approach is intended to improve the model's ability to distinguish between PCOS and non-PCOS records.",
 
-    outcomeId: "Menghasilkan model klasifikasi terbaik menggunakan Linear Kernel SVM setelah penerapan Genetic Algorithm dan Bayesian Optimization. Proses seleksi fitur berhasil mengurangi jumlah fitur dari 41 menjadi 36 fitur yang digunakan dalam pemodelan. Model memperoleh akurasi sebesar 92,66% dan ROC-AUC sebesar 96,35%. Hasil penelitian juga diimplementasikan dalam aplikasi berbasis Streamlit untuk mendemonstrasikan proses prediksi. Proyek ini merupakan penelitian akademik dan tidak ditujukan sebagai alat diagnosis medis.",
-    outcomeEn: "Produced the best classification model using Linear Kernel SVM after applying Genetic Algorithm and Bayesian Optimization. Feature selection reduced the number of features from 41 to 36 for model development. The model achieved 92.66% accuracy and a 96.35% ROC-AUC score. The research was also implemented in a Streamlit-based application to demonstrate the prediction process. This is an academic research project and is not intended to serve as a medical diagnostic tool.",
+    outcomeId: "Penelitian menghasilkan model terbaik menggunakan Linear Kernel SVM setelah proses seleksi fitur Genetic Algorithm dan optimasi Bayesian Optimization. Jumlah fitur berhasil dikurangi dari 41 menjadi 36 fitur terpilih, dengan akurasi sebesar 92,66% dan ROC-AUC sebesar 96,35%. Model kemudian diimplementasikan ke dalam aplikasi berbasis web menggunakan Streamlit.",
+    outcomeEn: "The research produced the best model using Linear Kernel SVM after Genetic Algorithm feature selection and Bayesian Optimization. The number of features was reduced from 41 to 36 selected features, achieving 92.66% accuracy and a 96.35% ROC-AUC score. The model was then implemented in a web-based application using Streamlit.",
 
     processId: [
-      ["01", "Dataset Preparation", "Memahami dataset, menentukan target klasifikasi, dan menyiapkan data."],
-      ["02", "Feature Selection", "Menerapkan Genetic Algorithm untuk memilih fitur."],
-      ["03", "Model Optimization", "Menggunakan Bayesian Optimization untuk optimasi hyperparameter."],
-      ["04", "Model Development", "Melatih model SVM dan mengintegrasikannya ke aplikasi Streamlit."]
+      ["01", "Data Preparation", "Menyiapkan dataset dan memeriksa kualitas data."],
+      ["02", "Feature Selection", "Memilih fitur relevan menggunakan Genetic Algorithm."],
+      ["03", "Model Optimization", "Mengoptimasi hyperparameter SVM menggunakan Bayesian Optimization."],
+      ["04", "Implementation", "Mengimplementasikan model klasifikasi ke aplikasi Streamlit."]
     ],
 
     processEn: [
-      ["01", "Dataset Preparation", "Reviewed the dataset, defined the classification target, and prepared the data."],
-      ["02", "Feature Selection", "Applied Genetic Algorithm for feature selection."],
-      ["03", "Model Optimization", "Used Bayesian Optimization for hyperparameter optimization."],
-      ["04", "Model Development", "Trained the SVM model and integrated it into a Streamlit application."]
+      ["01", "Data Preparation", "Prepared the dataset and checked data quality."],
+      ["02", "Feature Selection", "Selected relevant features using Genetic Algorithm."],
+      ["03", "Model Optimization", "Optimized SVM hyperparameters using Bayesian Optimization."],
+      ["04", "Implementation", "Implemented the classification model in a Streamlit application."]
     ],
 
-    images: ["images/projects/PCOS.jpeg"]
+    images: ["images/projects/PCOS.jpeg",
+      "images/projects/pcos2.jpeg",
+      "images/projects/pcos3.jpeg",
+      "images/projects/pcos4.jpeg",
+      "images/projects/pcos5.jpeg",
+      "images/projects/pcos6.png",
+      "images/projects/pcos7.png",
+      "images/projects/pcos8.png",
+    ]
   },
 
-
-  /* =====================================
+    /* =====================================
      05. ELDERLY HEALTH
   ===================================== */
 
   "elderly-health": {
     title: "Elderly Health Monitoring Website",
     category: "PROJECT 05 · WEB DEVELOPMENT",
-
-    leadId: "Pengembangan website pemantauan informasi kesehatan lansia yang terintegrasi dengan database SQL. Proyek ini berfokus pada pengelolaan data secara terstruktur untuk mendukung proses pencatatan, pembaruan, dan penyajian informasi kesehatan melalui platform berbasis web.",
-    leadEn: "A website development project for managing elderly health information integrated with an SQL database. It focuses on structured data management to support recording, updating, and presenting health information through a web-based platform.",
-
+    leadId: "Proyek ini merupakan pengembangan website untuk mendukung pengelolaan dan pemantauan informasi kesehatan lansia. Sistem dirancang dengan mengintegrasikan website dan database SQL sehingga informasi dapat disimpan, dikelola, dan ditampilkan secara lebih terstruktur. Proyek ini menggabungkan penerapan pengelolaan basis data dengan pengembangan aplikasi berbasis web.",
+    leadEn: "This project involves developing a website to support the management and monitoring of elderly health information. The system is designed by integrating a website with an SQL database, allowing information to be stored, managed, and presented in a more structured way. The project combines database management with web application development.",
     categoryInfo: "Database · Web Development",
     tools: "SQL, Web Development",
     focus: "Health Information Management",
@@ -347,14 +359,14 @@ const projectDetails = {
       ["01", "Proyek", "Project", "⌘"]
     ],
 
-    overviewId: "Proyek ini mengembangkan website yang terintegrasi dengan database SQL untuk mendukung pengelolaan informasi kesehatan lansia. Pengembangan mencakup penyusunan struktur basis data, pengelolaan informasi menggunakan SQL, serta integrasi database dengan antarmuka website. Sistem dirancang agar informasi dapat disimpan dan dikelola secara terstruktur sehingga proses pencatatan maupun pemantauan data menjadi lebih mudah dilakukan.",
-    overviewEn: "This project develops a website integrated with an SQL database to support elderly health information management. The development includes database structure design, information management using SQL, and database integration with the website interface. The system is designed to store and organize information systematically, making data recording and monitoring easier.",
+    overviewId: "Elderly Health Monitoring Website merupakan proyek pengembangan aplikasi berbasis web yang berfokus pada pengelolaan informasi kesehatan lansia. Proyek ini memanfaatkan database SQL sebagai media penyimpanan data dan website sebagai antarmuka untuk mengakses serta mengelola informasi. Pengembangan dilakukan dengan memperhatikan hubungan antara struktur basis data dan kebutuhan pengelolaan informasi pada aplikasi.",
+    overviewEn: "Elderly Health Monitoring Website is a web application development project focused on managing elderly health information. The project uses an SQL database to store data and a website interface to access and manage the information. Development focuses on the relationship between database structure and the application's information management requirements.",
 
-    objectiveId: "Mengembangkan platform berbasis web yang dapat mendukung pengelolaan informasi kesehatan lansia secara lebih terorganisasi. Proyek ini bertujuan untuk menerapkan penggunaan database SQL dalam penyimpanan dan pengelolaan data, serta mengintegrasikan proses tersebut dengan antarmuka website agar informasi dapat diakses dan disajikan secara lebih sistematis.",
-    objectiveEn: "To develop a web-based platform that supports more organized elderly health information management. This project aims to apply an SQL database for data storage and management and integrate these processes with the website interface so information can be accessed and presented systematically.",
+    objectiveId: "Proyek ini bertujuan untuk membangun sistem yang dapat membantu pengelolaan informasi kesehatan lansia secara terstruktur. Penggunaan database SQL ditujukan untuk mendukung penyimpanan dan pengelolaan data, sedangkan website dikembangkan sebagai media untuk menyajikan informasi agar lebih mudah diakses dan dipantau.",
+    objectiveEn: "This project aims to build a system that supports structured management of elderly health information. The SQL database is used to support data storage and management, while the website serves as an interface for presenting information in a more accessible and manageable way.",
 
-    outcomeId: "Menghasilkan website yang terhubung dengan database SQL untuk mendukung penyimpanan, pengelolaan, dan penyajian informasi kesehatan lansia. Implementasi mencakup integrasi antara basis data dan antarmuka website serta penerapan operasi pengelolaan data. Proyek ini menunjukkan penerapan konsep database dan pengembangan web dalam membangun sistem informasi yang terstruktur.",
-    outcomeEn: "Produced a website connected to an SQL database to support the storage, management, and presentation of elderly health information. The implementation includes database integration with the website interface and data management operations. This project demonstrates the application of database concepts and web development in building a structured information system.",
+    outcomeId: "Menghasilkan website yang terintegrasi dengan database SQL untuk mendukung penyimpanan, pengelolaan, dan penyajian informasi kesehatan lansia. Proyek ini menerapkan konsep pengelolaan basis data dan integrasi antara sisi aplikasi dengan penyimpanan data. Hasil pengembangan menjadi implementasi penerapan SQL dalam sebuah sistem informasi berbasis web.",
+    outcomeEn: "The project produced a website integrated with an SQL database to support the storage, management, and presentation of elderly health information. It applies database management concepts and integration between the application and data storage layers. The result demonstrates the implementation of SQL in a web-based information system.",
 
     processId: [
       ["01", "Database Design", "Menyusun struktur basis data untuk menyimpan informasi."],
@@ -381,10 +393,8 @@ const projectDetails = {
   "financial-property": {
     title: "Financial & Property Management App",
     category: "PROJECT 06 · JAVA",
-
-    leadId: "Pengembangan aplikasi berbasis Java untuk membantu pencatatan transaksi serta pengelolaan informasi keuangan dan properti. Proyek ini menerapkan konsep database dan operasi CRUD agar proses penyimpanan, pencarian, pembaruan, serta penghapusan data dapat dilakukan melalui satu sistem.",
-    leadEn: "A Java-based application designed to support transaction recording and financial and property information management. This project applies database concepts and CRUD operations to manage data storage, retrieval, updating, and deletion within a single system.",
-
+    leadId: "Proyek ini berfokus pada pengembangan aplikasi untuk membantu pengelolaan informasi keuangan dan properti dalam satu sistem. Aplikasi dibangun menggunakan Java dengan menerapkan operasi CRUD (Create, Read, Update, Delete) untuk mendukung proses pencatatan transaksi serta pengelolaan data. Pengembangan ini menjadi penerapan konsep pemrograman berorientasi objek dan pengelolaan data dalam sebuah aplikasi.",
+    leadEn: "This project focuses on developing an application to manage financial and property information within a single system. The application is built using Java and implements CRUD (Create, Read, Update, Delete) operations to support transaction recording and data management. The development applies object-oriented programming concepts and data management in an application.",
     categoryInfo: "Application Development · Database",
     tools: "Java, SQL, Database",
     focus: "Financial and Property Management",
@@ -421,14 +431,14 @@ const projectDetails = {
       ["01", "Aplikasi", "Application", "⌘"]
     ],
 
-    overviewId: "Proyek ini berfokus pada pengembangan aplikasi untuk mengelola informasi keuangan dan properti secara terstruktur. Aplikasi dikembangkan menggunakan bahasa pemrograman Java dengan dukungan database untuk menyimpan informasi yang dibutuhkan. Fungsionalitas aplikasi mencakup proses pencatatan transaksi serta pengelolaan data melalui operasi CRUD (Create, Read, Update, Delete), sehingga pengguna dapat melakukan pengelolaan informasi dalam satu platform.",
-    overviewEn: "This project focuses on developing an application to manage financial and property information systematically. The application is built using Java with database support to store the required information. Its functionality includes transaction recording and data management through CRUD (Create, Read, Update, Delete) operations, allowing users to manage information within a single platform.",
+    overviewId: "Financial & Property Management App merupakan proyek pengembangan aplikasi menggunakan bahasa pemrograman Java. Aplikasi dirancang untuk mengintegrasikan pengelolaan informasi keuangan dan properti. Dalam pengembangannya, operasi CRUD diterapkan sebagai fungsi utama untuk mengelola data, mulai dari menambahkan informasi baru, menampilkan data, memperbarui informasi, hingga menghapus data yang tidak diperlukan.",
+    overviewEn: "Financial & Property Management App is an application development project using the Java programming language. The application is designed to integrate financial and property information management. CRUD operations are implemented as the main functions for managing data, including adding new information, displaying records, updating information, and deleting unnecessary data.",
 
-    objectiveId: "Membangun aplikasi yang dapat mempermudah proses pencatatan transaksi dan pengelolaan informasi keuangan serta properti. Pengembangan bertujuan untuk menerapkan konsep pemrograman berorientasi objek, integrasi database, dan operasi CRUD dalam sebuah aplikasi yang memiliki alur pengelolaan data secara terstruktur.",
-    objectiveEn: "To build an application that simplifies transaction recording and financial and property information management. The development aims to apply object-oriented programming concepts, database integration, and CRUD operations within an application that provides a structured data management workflow.",
+    objectiveId: "Proyek ini bertujuan untuk membangun aplikasi yang dapat mengelola informasi keuangan dan properti secara terintegrasi. Penerapan operasi CRUD ditujukan untuk mempermudah proses pengelolaan data serta memberikan pengalaman penggunaan sistem yang lebih terstruktur. Proyek ini juga menjadi sarana penerapan konsep dasar pemrograman Java dalam pengembangan aplikasi.",
+    objectiveEn: "This project aims to build an application that manages financial and property information in an integrated system. CRUD operations are implemented to simplify data management and provide a more structured application experience. The project also serves as an application of fundamental Java programming concepts in software development.",
 
-    outcomeId: "Menghasilkan aplikasi berbasis Java yang mendukung pencatatan transaksi serta pengelolaan informasi keuangan dan properti. Aplikasi menerapkan operasi CRUD untuk menambahkan, menampilkan, memperbarui, dan menghapus data. Melalui proyek ini, konsep pengembangan aplikasi, pengelolaan database, dan pemrosesan data diterapkan dalam sebuah sistem yang terintegrasi.",
-    outcomeEn: "Produced a Java-based application that supports transaction recording and financial and property information management. The application implements CRUD operations to create, display, update, and delete records. Through this project, application development concepts, database management, and data processing are applied within an integrated system.",
+    outcomeId: "Menghasilkan aplikasi berbasis Java yang mengintegrasikan pengelolaan informasi keuangan dan properti. Aplikasi mendukung fungsi penambahan, penampilan, pembaruan, dan penghapusan data melalui operasi CRUD. Hasil pengerjaan menunjukkan penerapan konsep pemrograman Java dalam membangun aplikasi dengan fungsi pengelolaan data.",
+    outcomeEn: "The project produced a Java-based application that integrates financial and property information management. The application supports adding, displaying, updating, and deleting records through CRUD operations. The result demonstrates the application of Java programming concepts in developing a data management application.",
 
     processId: [
       ["01", "Requirement Analysis", "Mengidentifikasi kebutuhan pencatatan keuangan dan informasi properti."],
@@ -455,13 +465,15 @@ const projectDetails = {
   "nutriguide": {
     title: "NutriGuide",
     category: "PROJECT 07 · WEB DEVELOPMENT",
-
-    leadId: "Pengembangan website edukasi nutrisi yang menggabungkan kalkulator kebutuhan gizi, artikel informatif, dan informasi konsultasi ahli gizi. Proyek capstone tim ini mencakup perancangan UI/UX serta implementasi front-end untuk menghadirkan pengalaman akses informasi nutrisi yang lebih terstruktur.",
-    leadEn: "A nutrition education website that combines a nutritional needs calculator, informative articles, and dietitian consultation information. This team capstone project covers UI/UX design and front-end implementation to provide a more structured nutrition information experience.",
-
+    leadId: "NutriGuide merupakan proyek pengembangan website edukasi nutrisi yang dirancang untuk membantu pengguna memperoleh informasi seputar kebutuhan gizi dan pola hidup sehat. Website ini menggabungkan fitur kalkulator kebutuhan nutrisi, artikel edukasi, serta informasi konsultasi ahli gizi dalam satu platform. Dalam proyek ini, pengerjaan mencakup perancangan UI/UX dan implementasi front-end website.",
+    leadEn: "NutriGuide is a nutrition education website project designed to help users access information about nutritional needs and healthy lifestyles. The website combines a nutritional needs calculator, educational articles, and dietitian consultation information in one platform. The project involves UI/UX design and front-end website implementation.",
     categoryInfo: "Web Development · Team Project",
     tools: "HTML, CSS, JavaScript, Figma",
     focus: "Nutrition Education Website",
+    projectType: "website",
+    externalUrl: "https://relystrix-code.github.io/NutriGuide/",
+    actionLabelId: "Lihat Website",
+    actionLabelEn: "View Website",
 
     focusCard: {
       titleId: "Development Highlights",
@@ -495,14 +507,14 @@ const projectDetails = {
       ["Team", "Capstone", "Capstone", "⌘"]
     ],
 
-    overviewId: "NutriGuide merupakan proyek capstone tim yang berfokus pada pengembangan platform edukasi nutrisi berbasis web. Website dirancang untuk membantu pengguna memperoleh informasi seputar kebutuhan gizi melalui berbagai fitur, seperti kalkulator nutrisi, artikel edukasi, dan informasi konsultasi ahli gizi. Dalam proyek ini, pekerjaan mencakup perancangan UI/UX untuk menyusun alur dan tampilan website serta implementasi front-end menggunakan HTML, CSS, dan JavaScript. Pengembangan dilakukan secara kolaboratif sebagai bagian dari proyek akhir program Studi Independen.",
-    overviewEn: "NutriGuide is a team capstone project focused on developing a web-based nutrition education platform. The website is designed to help users access nutritional information through features such as a nutrition calculator, educational articles, and dietitian consultation information. The project involved UI/UX design to organize the website flow and interface, as well as front-end implementation using HTML, CSS, and JavaScript. Development was carried out collaboratively as part of the Independent Study final project.",
+    overviewId: "NutriGuide dikembangkan sebagai platform edukasi nutrisi yang menyediakan beberapa fitur utama untuk mendukung kebutuhan informasi pengguna. Fitur yang dikembangkan mencakup kalkulator kebutuhan nutrisi, artikel edukasi seputar gizi, serta kartu informasi ahli gizi yang menyediakan akses konsultasi melalui WhatsApp. Proyek ini dikerjakan secara tim dengan tanggung jawab pada perancangan UI/UX dan pengembangan front-end.",
+    overviewEn: "NutriGuide was developed as a nutrition education platform that provides several key features to support users' information needs. The features include a nutritional needs calculator, nutrition-related educational articles, and dietitian information cards that provide consultation access through WhatsApp. This team project involved responsibilities in UI/UX design and front-end development.",
 
-    objectiveId: "Menyediakan platform edukasi nutrisi yang dapat membantu pengguna memahami kebutuhan gizi dan menemukan informasi kesehatan yang relevan. Pengembangan bertujuan untuk menggabungkan fitur kalkulator kebutuhan nutrisi, artikel edukasi, dan informasi konsultasi ahli gizi dalam satu website. Selain itu, proyek ini bertujuan menghadirkan antarmuka yang informatif dan mudah digunakan melalui perancangan pengalaman pengguna serta implementasi front-end.",
-    objectiveEn: "To provide a nutrition education platform that helps users understand their nutritional needs and access relevant health information. The development aims to combine a nutritional needs calculator, educational articles, and dietitian consultation information within one website. It also aims to deliver an informative and user-friendly interface through user experience design and front-end implementation.",
+    objectiveId: "Proyek ini bertujuan untuk menyediakan platform yang menggabungkan informasi dan fitur edukasi nutrisi dalam satu website. Pengembangan difokuskan pada penyajian informasi yang mudah dipahami, penyediaan kalkulator untuk membantu pengguna memperkirakan kebutuhan nutrisi, serta akses informasi konsultasi ahli gizi. Perancangan antarmuka juga diarahkan untuk menciptakan pengalaman penggunaan yang mudah dipahami dan dinavigasi.",
+    objectiveEn: "This project aims to provide a platform that combines nutrition information and educational features in one website. Development focuses on presenting easy-to-understand information, providing a calculator to help users estimate their nutritional needs, and offering access to dietitian consultation information. The interface is also designed to create an intuitive and easy-to-navigate user experience.",
 
-    outcomeId: "Menghasilkan website edukasi nutrisi dengan sembilan fitur utama yang mencakup kalkulator kebutuhan gizi, artikel edukasi, dan kartu informasi konsultasi ahli gizi yang terhubung ke WhatsApp. Kontribusi dalam tim meliputi perancangan UI/UX dan implementasi front-end untuk membangun tampilan serta interaksi website. Proyek ini menjadi penerapan kolaborasi antara desain antarmuka dan pengembangan web dalam membangun platform edukasi digital.",
-    outcomeEn: "Produced a nutrition education website with nine main features, including a nutritional needs calculator, educational articles, and dietitian consultation information cards linked to WhatsApp. The team contribution covered UI/UX design and front-end implementation to develop the website interface and interactions. This project demonstrates collaboration between interface design and web development in building a digital education platform.",
+    outcomeId: "Menghasilkan website edukasi nutrisi dengan 9 fitur utama, termasuk kalkulator kebutuhan nutrisi, artikel edukasi, dan informasi konsultasi ahli gizi. Pada proyek ini, tanggung jawab mencakup perancangan antarmuka menggunakan Figma serta implementasi front-end website. Fitur informasi konsultasi dilengkapi dengan tautan WhatsApp untuk memudahkan pengguna mengakses kontak ahli gizi.",
+    outcomeEn: "The project produced a nutrition education website with 9 main features, including a nutritional needs calculator, educational articles, and dietitian consultation information. Responsibilities included designing the interface using Figma and implementing the website front end. The consultation information feature includes WhatsApp links to make dietitian contact information more accessible.",
 
     processId: [
       ["01", "Planning", "Mengidentifikasi kebutuhan pengguna dan ruang lingkup fitur edukasi nutrisi."],
@@ -529,13 +541,15 @@ const projectDetails = {
   "gofast": {
     title: "GoFast",
     category: "PROJECT 08 · UI/UX DESIGN",
-
-    leadId: "Perancangan UI/UX aplikasi GoFast menggunakan Figma dengan fokus pada penyusunan tampilan, struktur navigasi, dan alur interaksi pengguna. Proyek ini menghasilkan rancangan antarmuka yang menggambarkan pengalaman penggunaan aplikasi melalui serangkaian layar dan prototype.",
-    leadEn: "A UI/UX design project for the GoFast application using Figma, focusing on interface layouts, navigation structure, and user interaction flows. The project produces an interface design that illustrates the application experience through multiple screens and a prototype.",
-
+    leadId: "GoFast merupakan proyek perancangan UI/UX yang berfokus pada pembuatan antarmuka aplikasi dengan struktur navigasi dan alur penggunaan yang terorganisasi. Proyek ini mencakup penyusunan tampilan antarmuka, penentuan tata letak elemen, serta perancangan alur interaksi pengguna menggunakan Figma. Rancangan dibuat untuk memberikan pengalaman penggunaan aplikasi yang lebih jelas dan mudah dipahami.",
+    leadEn: "GoFast is a UI/UX design project focused on creating an application interface with an organized navigation structure and user flow. The project includes interface layout planning, element arrangement, and user interaction flow design using Figma. The design aims to provide a clearer and more intuitive application experience.",
     categoryInfo: "UI/UX Design",
     tools: "Figma",
     focus: "Interface Design and Prototyping",
+    projectType: "uiux",
+    externalUrl: "https://www.figma.com/proto/873BJ2ZpBze0rpHqME8ewH/Software-Engineering?node-id=1-154&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A130",
+    actionLabelId: "Lihat Prototype Figma",
+    actionLabelEn: "View Figma Prototype",
 
     focusCard: {
       titleId: "Design Solution",
@@ -569,14 +583,14 @@ const projectDetails = {
       ["01", "Proyek", "Project", "⌘"]
     ],
 
-    overviewId: "GoFast merupakan proyek perancangan antarmuka aplikasi yang berfokus pada pengalaman dan kemudahan penggunaan. Proses desain dilakukan menggunakan Figma dengan menyusun struktur navigasi, alur penggunaan, serta tampilan antarmuka untuk menggambarkan bagaimana pengguna berinteraksi dengan aplikasi. Perancangan mencakup beberapa tahapan, mulai dari penyusunan user flow dan wireframe hingga pengembangan desain visual serta prototype. Hasil rancangan terdiri dari lebih dari 16 layar yang merepresentasikan bagian-bagian utama aplikasi.",
-    overviewEn: "GoFast is an application interface design project focused on usability and user experience. The design process was carried out using Figma by organizing navigation structures, user flows, and interface layouts to illustrate how users interact with the application. The design includes several stages, from user flow development and wireframing to visual design and prototyping. The final design consists of more than 16 screens representing the application's main sections.",
+    overviewId: "GoFast merupakan proyek desain antarmuka aplikasi yang dikerjakan menggunakan Figma. Proses perancangan mencakup penyusunan struktur halaman, pengaturan tata letak, pemilihan elemen visual, serta pengembangan alur navigasi antarhalaman. Setiap tampilan dirancang sebagai bagian dari satu kesatuan pengalaman penggunaan aplikasi.",
+    overviewEn: "GoFast is an application interface design project created using Figma. The design process includes page structure planning, layout arrangement, visual element selection, and navigation flow development between screens. Each interface is designed as part of a consistent application experience.",
 
-    objectiveId: "Merancang antarmuka aplikasi yang memiliki struktur navigasi jelas dan alur interaksi yang mudah dipahami. Proyek ini bertujuan untuk menyusun pengalaman penggunaan secara sistematis, memastikan keterkaitan antarlayar, serta menghasilkan tampilan visual yang konsisten. Rancangan juga dibuat untuk menggambarkan alur penggunaan aplikasi melalui prototype interaktif.",
-    objectiveEn: "To design an application interface with a clear navigation structure and easy-to-understand interaction flows. The project aims to organize the user experience systematically, maintain consistency between screens, and produce a cohesive visual interface. The design also aims to demonstrate the application workflow through an interactive prototype.",
+    objectiveId: "Proyek ini bertujuan untuk menghasilkan rancangan antarmuka aplikasi dengan navigasi yang terstruktur dan alur interaksi yang mudah dipahami. Perancangan difokuskan pada konsistensi tampilan antarhalaman, penempatan elemen yang sesuai, serta penyusunan alur penggunaan agar pengguna dapat memahami fungsi dan perpindahan fitur dalam aplikasi.",
+    objectiveEn: "This project aims to create an application interface with structured navigation and easy-to-understand interaction flows. The design focuses on visual consistency across screens, appropriate element placement, and organized user flows to help users understand application functions and navigate between features.",
 
-    outcomeId: "Menghasilkan rancangan UI/UX dengan lebih dari 16 layar menggunakan Figma yang mencakup berbagai tampilan dan alur penggunaan aplikasi. Hasil pekerjaan meliputi penyusunan user flow, wireframe, komponen antarmuka, desain visual, dan prototype. Dokumentasi desain ini menggambarkan struktur navigasi serta hubungan interaksi antarlayar sebagai representasi konsep aplikasi.",
-    outcomeEn: "Produced a UI/UX design with more than 16 screens using Figma, covering various application interfaces and user flows. The work includes user flow development, wireframes, interface components, visual design, and prototyping. The design documentation illustrates the navigation structure and interactions between screens as a representation of the application concept.",
+    outcomeId: "Menghasilkan rancangan UI/UX aplikasi menggunakan Figma yang mencakup lebih dari 16 layar desain. Hasil perancangan meliputi tampilan antarmuka dan alur navigasi yang disusun untuk menggambarkan interaksi pengguna dengan berbagai fitur aplikasi. Proyek ini menunjukkan penerapan prinsip dasar desain antarmuka dan penyusunan user flow dalam pengembangan produk digital.",
+    outcomeEn: "The project produced a UI/UX application design using Figma, consisting of more than 16 design screens. The design includes interface layouts and navigation flows that illustrate user interactions with various application features. This project demonstrates the application of fundamental interface design principles and user flow planning in digital product development.",
 
     processId: [
       ["01", "User Flow", "Menyusun alur penggunaan aplikasi."],
@@ -603,13 +617,15 @@ const projectDetails = {
   "cookify": {
     title: "Cookify",
     category: "PROJECT 09 · UI/UX DESIGN",
-
-    leadId: "Perancangan UI/UX aplikasi Cookify sebagai platform eksplorasi resep masakan dan inspirasi memasak. Proyek ini berfokus pada penyajian informasi resep melalui antarmuka yang terstruktur, navigasi yang mudah dipahami, serta alur interaksi yang mendukung pengalaman pengguna.",
-    leadEn: "A UI/UX design project for Cookify, a platform for discovering recipes and cooking inspiration. It focuses on presenting recipe information through structured interfaces, intuitive navigation, and interaction flows that support the user experience.",
-
+    leadId: "Cookify merupakan proyek perancangan UI/UX aplikasi resep masakan yang dirancang untuk membantu pengguna menemukan dan mengeksplorasi berbagai inspirasi memasak. Proyek ini berfokus pada penyusunan tampilan antarmuka, struktur informasi resep, serta alur navigasi agar pengguna dapat menjelajahi konten aplikasi dengan lebih mudah. Seluruh rancangan antarmuka dibuat menggunakan Figma.",
+    leadEn: "Cookify is a UI/UX design project for a recipe application designed to help users discover and explore different cooking inspirations. The project focuses on interface layout, recipe information structure, and navigation flow to make application content easier to explore. All interface designs are created using Figma.",
     categoryInfo: "UI/UX Design",
     tools: "Figma",
     focus: "Recipe App Interface Design",
+    projectType: "uiux",
+    externalUrl: "https://www.figma.com/proto/ugbxPOfJxSEd5H7wQitXTw/Human-And-Computer-Interaction?node-id=11-682&scaling=scale-down&content-scaling=fixed&page-id=6%3A4",
+    actionLabelId: "Lihat Prototype Figma",
+    actionLabelEn: "View Figma Prototype",
 
     focusCard: {
       titleId: "Design Solution",
@@ -643,14 +659,14 @@ const projectDetails = {
       ["01", "Proyek", "Project", "⌘"]
     ],
 
-    overviewId: "Cookify merupakan proyek perancangan UI/UX aplikasi resep masakan menggunakan Figma. Aplikasi dirancang untuk memberikan gambaran pengalaman pengguna dalam menemukan dan mengeksplorasi berbagai resep. Proses perancangan mencakup penentuan konsep aplikasi, penyusunan user flow, pembuatan wireframe, pengembangan desain antarmuka, serta penyusunan prototype. Setiap bagian dirancang untuk menyajikan informasi resep secara terstruktur sehingga pengguna dapat memahami alur penggunaan aplikasi dengan lebih mudah.",
-    overviewEn: "Cookify is a UI/UX design project for a recipe application created using Figma. The application is designed to illustrate the user experience of discovering and exploring various recipes. The design process includes defining the application concept, developing user flows, creating wireframes, designing interfaces, and building a prototype. Each section is structured to present recipe information clearly and help users understand the application workflow.",
+    overviewId: "Cookify merupakan proyek desain aplikasi yang berfokus pada penyajian informasi resep masakan dalam sebuah platform digital. Proses perancangan mencakup pembuatan tampilan halaman, pengaturan komponen antarmuka, penyusunan informasi resep, serta perancangan alur navigasi untuk mendukung eksplorasi konten. Figma digunakan sebagai tools utama dalam proses desain dan penyusunan keseluruhan tampilan aplikasi.",
+    overviewEn: "Cookify is an application design project focused on presenting recipe information through a digital platform. The design process includes creating page layouts, arranging interface components, structuring recipe information, and developing navigation flows to support content exploration. Figma is used as the primary tool for designing and organizing the application's overall interface.",
 
-    objectiveId: "Merancang aplikasi yang memberikan pengalaman eksplorasi resep secara intuitif dan terorganisasi. Proyek ini bertujuan untuk menyusun alur navigasi yang memudahkan pengguna menemukan resep, memahami informasi yang disajikan, serta berpindah antarhalaman dengan nyaman. Selain itu, perancangan difokuskan pada konsistensi tampilan dan keterhubungan antarkomponen agar keseluruhan pengalaman aplikasi terasa lebih terarah.",
-    objectiveEn: "To design an application that provides an intuitive and organized recipe discovery experience. The project aims to create navigation flows that help users find recipes, understand the presented information, and move between pages comfortably. The design also focuses on visual consistency and connected interface components to create a more cohesive application experience.",
+    objectiveId: "Proyek ini bertujuan untuk merancang aplikasi resep masakan dengan tampilan yang terstruktur dan mudah digunakan. Fokus perancangan mencakup kemudahan pengguna dalam menemukan resep, memahami informasi yang disajikan, serta berpindah antarhalaman melalui navigasi yang konsisten. Struktur antarmuka juga dirancang agar informasi resep dapat disajikan secara lebih terorganisasi.",
+    objectiveEn: "This project aims to design a recipe application with a structured and user-friendly interface. The design focuses on helping users find recipes, understand the presented information, and navigate between pages through a consistent navigation system. The interface structure is also designed to present recipe information in a more organized way.",
 
-    outcomeId: "Menghasilkan rancangan UI/UX aplikasi dengan lebih dari 35 layar menggunakan Figma. Rancangan mencakup tampilan halaman, komponen antarmuka, alur eksplorasi resep, serta prototype untuk menggambarkan interaksi antarlayar. Hasil desain memberikan representasi visual mengenai struktur dan pengalaman penggunaan aplikasi Cookify sebagai platform pencarian inspirasi resep masakan.",
-    outcomeEn: "Produced a UI/UX application design with more than 35 screens using Figma. The design includes page layouts, interface components, recipe exploration flows, and a prototype illustrating interactions between screens. The final design provides a visual representation of the structure and user experience of Cookify as a recipe discovery platform.",
+    outcomeId: "Menghasilkan rancangan UI/UX aplikasi Cookify menggunakan Figma dengan lebih dari 35 layar desain. Rancangan mencakup berbagai tampilan antarmuka dan alur eksplorasi resep yang disusun untuk menggambarkan pengalaman pengguna dalam menggunakan aplikasi. Hasil proyek menjadi representasi visual dari konsep aplikasi resep masakan yang telah dirancang.",
+    outcomeEn: "The project produced a Cookify UI/UX design using Figma, consisting of more than 35 design screens. The design includes various interface layouts and recipe exploration flows that illustrate the intended user experience. The result serves as a visual representation of the designed recipe application concept.",
 
     processId: [
       ["01", "Concept", "Menentukan konsep aplikasi dan kebutuhan informasi resep."],
@@ -671,7 +687,6 @@ const projectDetails = {
 
 };
 
-
 /* =========================================
    GET PROJECT FROM URL
 ========================================= */
@@ -681,6 +696,175 @@ const projectId = params.get("id");
 const project = projectDetails[projectId];
 
 const detailRoot = document.getElementById("projectDetail");
+
+
+/* =========================================
+   PROJECT EXTERNAL ACTION & APPLICATION LIGHTBOX
+========================================= */
+
+const projectExternalAction =
+  document.getElementById("projectExternalAction");
+
+const applicationLightbox =
+  document.getElementById("applicationLightbox");
+
+const applicationFrame =
+  document.getElementById("applicationFrame");
+
+const applicationClose =
+  document.getElementById("applicationClose");
+
+const applicationFallback =
+  document.getElementById("applicationFallback");
+
+const applicationNoticeLink =
+  document.getElementById("applicationNoticeLink");
+
+const applicationNoticeLinkEn =
+  document.getElementById("applicationNoticeLinkEn");
+
+const applicationOpenNew =
+  document.getElementById("applicationOpenNew");
+
+const applicationFallbackLink =
+  document.getElementById("applicationFallbackLink");
+
+const applicationModalTitle =
+  document.getElementById("applicationModalTitle");
+
+
+/* =========================================
+   SET PROJECT EXTERNAL URL
+========================================= */
+
+if (projectExternalAction && project?.externalUrl) {
+
+  // External action on project preview
+  projectExternalAction.innerHTML = `
+    <a
+      href="${project.externalUrl}"
+      class="btn-project-external"
+      id="openApplication"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="lang-id">${project.actionLabelId}</span>
+      <span class="lang-en">${project.actionLabelEn}</span>
+      <span class="external-arrow">↗</span>
+    </a>
+  `;
+
+  // Apply the active project's URL to every external link
+  if (applicationNoticeLink) {
+    applicationNoticeLink.href = project.externalUrl;
+  }
+
+  if (applicationNoticeLinkEn) {
+    applicationNoticeLinkEn.href = project.externalUrl;
+  }
+
+  if (applicationOpenNew) {
+    applicationOpenNew.href = project.externalUrl;
+  }
+
+  if (applicationFallbackLink) {
+    applicationFallbackLink.href = project.externalUrl;
+  }
+
+  // Update modal title
+  if (applicationModalTitle) {
+    applicationModalTitle.textContent = project.title;
+  }
+
+  // Open application lightbox
+  const openApplication =
+    document.getElementById("openApplication");
+
+  if (openApplication && applicationLightbox) {
+
+    openApplication.addEventListener("click", function(event) {
+
+      event.preventDefault();
+
+      if (applicationFallback) {
+        applicationFallback.classList.remove("show");
+      }
+
+      applicationLightbox.classList.add("active");
+
+      applicationLightbox.setAttribute("aria-hidden", "false");
+
+      document.body.style.overflow = "hidden";
+
+      if (applicationFrame) {
+        applicationFrame.src = project.externalUrl;
+      }
+
+    });
+
+  }
+
+}
+
+
+/* =========================================
+   CLOSE APPLICATION LIGHTBOX
+========================================= */
+
+function closeApplicationLightbox() {
+
+  if (!applicationLightbox) return;
+
+  applicationLightbox.classList.remove("active");
+
+  applicationLightbox.setAttribute("aria-hidden", "true");
+
+  document.body.style.overflow = "";
+
+  // Stop iframe when modal closes
+  if (applicationFrame) {
+    applicationFrame.src = "about:blank";
+  }
+
+}
+
+
+// Close button
+if (applicationClose) {
+
+  applicationClose.addEventListener(
+    "click",
+    closeApplicationLightbox
+  );
+
+}
+
+
+// Click outside modal
+if (applicationLightbox) {
+
+  applicationLightbox.addEventListener("click", function(event) {
+
+    if (event.target === applicationLightbox) {
+      closeApplicationLightbox();
+    }
+
+  });
+
+}
+
+
+// Escape key
+document.addEventListener("keydown", function(event) {
+
+  if (
+    event.key === "Escape" &&
+    applicationLightbox?.classList.contains("active")
+  ) {
+    closeApplicationLightbox();
+  }
+
+});
 
 
 /* =========================================
@@ -713,20 +897,33 @@ if (!project) {
 
   document.title = `${project.title} | Anindya Salsabila Putri`;
 
-  document.getElementById("detailBreadcrumb").textContent =
-    project.title;
+  const breadcrumb = document.getElementById("detailBreadcrumb");
+  const category = document.getElementById("detailCategory");
+  const title = document.getElementById("detailTitle");
+  const leadId = document.getElementById("detailLeadId");
+  const leadEn = document.getElementById("detailLeadEn");
 
-  document.getElementById("detailCategory").textContent =
-    project.category;
+  if (breadcrumb) breadcrumb.textContent = project.title;
+  if (category) category.textContent = project.category;
+  if (title) title.textContent = project.title;
+  if (leadId) leadId.textContent = project.leadId;
+  if (leadEn) leadEn.textContent = project.leadEn;
 
-  document.getElementById("detailTitle").textContent =
-    project.title;
 
-  document.getElementById("detailLeadId").textContent =
-    project.leadId;
+  /* =========================================
+     PROJECT TAGS
+  ========================================= */
 
-  document.getElementById("detailLeadEn").textContent =
-    project.leadEn;
+  const detailTags = document.getElementById("detailTags");
+
+  if (detailTags) {
+    detailTags.innerHTML = (project.tools || "")
+      .split(",")
+      .map(tool => tool.trim())
+      .filter(Boolean)
+      .map(tool => `<span class="tag">${tool}</span>`)
+      .join("");
+  }
 
 
   /* =========================================
@@ -736,66 +933,68 @@ if (!project) {
   const heroHighlights =
     document.getElementById("detailHeroHighlights");
 
-  const primaryMetric = project.metrics[0];
-  const secondaryMetrics = project.metrics.slice(1, 3);
+  if (heroHighlights && project.metrics) {
 
-  heroHighlights.innerHTML = `
-    <div class="highlight-primary">
+    const primaryMetric = project.metrics[0];
+    const secondaryMetrics = project.metrics.slice(1, 3);
 
-      <span class="highlight-label lang-id">
-        ${primaryMetric[1]}
-      </span>
+    heroHighlights.innerHTML = `
+      <div class="highlight-primary">
 
-      <span class="highlight-label lang-en">
-        ${primaryMetric[2]}
-      </span>
+        <span class="highlight-label lang-id">
+          ${primaryMetric[1]}
+        </span>
 
-      <strong>${primaryMetric[0]}</strong>
+        <span class="highlight-label lang-en">
+          ${primaryMetric[2]}
+        </span>
 
-      <span class="highlight-description">
-        ${project.focus}
-      </span>
+        <strong>${primaryMetric[0]}</strong>
 
-    </div>
+        <span class="highlight-description">
+          ${project.focus}
+        </span>
 
-    <div class="highlight-secondary">
+      </div>
 
-      ${secondaryMetrics.map(metric => `
-        <div class="highlight-small">
+      <div class="highlight-secondary">
 
-          <strong>${metric[0]}</strong>
+        ${secondaryMetrics.map(metric => `
+          <div class="highlight-small">
 
-          <span class="lang-id">${metric[1]}</span>
-          <span class="lang-en">${metric[2]}</span>
+            <strong>${metric[0]}</strong>
 
-        </div>
-      `).join("")}
+            <span class="lang-id">${metric[1]}</span>
+            <span class="lang-en">${metric[2]}</span>
 
-    </div>
-  `;
+          </div>
+        `).join("")}
+
+      </div>
+    `;
+  }
 
 
   /* =========================================
      ABOUT THE PROJECT
   ========================================= */
 
-  document.getElementById("detailOverviewId").textContent =
-    project.overviewId;
+  const textFields = [
+    ["detailOverviewId", project.overviewId],
+    ["detailOverviewEn", project.overviewEn],
+    ["detailObjectiveId", project.objectiveId],
+    ["detailObjectiveEn", project.objectiveEn],
+    ["detailResultId", project.outcomeId],
+    ["detailResultEn", project.outcomeEn]
+  ];
 
-  document.getElementById("detailOverviewEn").textContent =
-    project.overviewEn;
+  textFields.forEach(([id, value]) => {
+    const element = document.getElementById(id);
 
-  document.getElementById("detailObjectiveId").textContent =
-    project.objectiveId;
-
-  document.getElementById("detailObjectiveEn").textContent =
-    project.objectiveEn;
-
-  document.getElementById("detailResultId").textContent =
-    project.outcomeId;
-
-  document.getElementById("detailResultEn").textContent =
-    project.outcomeEn;
+    if (element) {
+      element.textContent = value || "";
+    }
+  });
 
 
   /* =========================================
@@ -852,6 +1051,7 @@ if (!project) {
     document.getElementById("detailProcess");
 
   function renderProcess(items) {
+
     return items.map(item => `
       <article class="detail-process-item">
 
@@ -861,25 +1061,31 @@ if (!project) {
         </div>
 
         <h3>${item[1]}</h3>
+
         <p>${item[2]}</p>
 
       </article>
     `).join("");
+
   }
 
-  processContainer.innerHTML = `
-    <div class="lang-id detail-process-grid">
-      ${renderProcess(project.processId)}
-    </div>
+  if (processContainer) {
 
-    <div class="lang-en detail-process-grid">
-      ${renderProcess(project.processEn)}
-    </div>
-  `;
+    processContainer.innerHTML = `
+      <div class="lang-id detail-process-grid">
+        ${renderProcess(project.processId)}
+      </div>
+
+      <div class="lang-en detail-process-grid">
+        ${renderProcess(project.processEn)}
+      </div>
+    `;
+
+  }
 
 
   /* =========================================
-     MAIN PROJECT IMAGE
+     PROJECT IMAGE CAROUSEL
   ========================================= */
 
   const mainImage =
@@ -888,26 +1094,455 @@ if (!project) {
   const previewPlaceholder =
     document.getElementById("previewPlaceholder");
 
-  const mainImagePath = project.images[0];
+  const previewImageWrap =
+    document.getElementById("previewImageWrap");
 
-  mainImage.style.display = "none";
-  previewPlaceholder.style.display = "block";
+  const previewFilename =
+    document.getElementById("previewFilename");
 
-  mainImage.onload = () => {
-    mainImage.style.display = "block";
-    previewPlaceholder.style.display = "none";
-  };
+  const previewPrev =
+    document.getElementById("previewPrev");
 
-  mainImage.onerror = () => {
+  const previewNext =
+    document.getElementById("previewNext");
+
+  const previewDots =
+    document.getElementById("previewDots");
+
+
+  const projectImages = Array.isArray(project.images)
+    ? project.images.filter(Boolean)
+    : [];
+
+  let currentImageIndex = 0;
+
+  let touchStartX = 0;
+
+
+  /* =========================================
+     IMAGE CAROUSEL DOTS
+  ========================================= */
+
+  function renderImageDots() {
+
+    if (!previewDots) return;
+
+    previewDots.innerHTML = projectImages.map((image, index) => `
+      <button
+        type="button"
+        class="preview-dot ${index === currentImageIndex ? "is-active" : ""}"
+        data-index="${index}"
+        aria-label="Show image ${index + 1}"
+        aria-current="${index === currentImageIndex ? "true" : "false"}">
+      </button>
+    `).join("");
+
+    previewDots.querySelectorAll(".preview-dot").forEach(dot => {
+
+      dot.addEventListener("click", () => {
+        showProjectImage(Number(dot.dataset.index));
+      });
+
+    });
+
+  }
+
+
+  /* =========================================
+     SHOW PROJECT IMAGE
+  ========================================= */
+
+  function showProjectImage(index) {
+
+    if (!mainImage || !previewPlaceholder) return;
+
+    if (!projectImages.length) {
+
+      mainImage.style.display = "none";
+      previewPlaceholder.style.display = "block";
+
+      if (previewPrev) previewPrev.classList.add("is-hidden");
+      if (previewNext) previewNext.classList.add("is-hidden");
+      if (previewDots) previewDots.classList.add("is-hidden");
+
+      if (previewFilename) {
+        previewFilename.textContent = "project-preview";
+      }
+
+      return;
+    }
+
+
+    currentImageIndex =
+      (index + projectImages.length) % projectImages.length;
+
+    const imagePath = projectImages[currentImageIndex];
+
+
+    // Reset image state
     mainImage.style.display = "none";
     previewPlaceholder.style.display = "block";
-  };
 
-  mainImage.src = mainImagePath;
-  mainImage.alt = `${project.title} preview`;
+    const placeholderTitle =
+      previewPlaceholder.querySelector("span");
 
-  document.getElementById("previewFilename").textContent =
-    mainImagePath.split("/").pop();
+    if (placeholderTitle) {
+      placeholderTitle.textContent = "PROJECT PREVIEW";
+    }
+
+
+    // Image loaded successfully
+    mainImage.onload = () => {
+
+      mainImage.style.display = "block";
+      previewPlaceholder.style.display = "none";
+
+    };
+
+
+    // Image failed to load
+    mainImage.onerror = () => {
+
+      mainImage.style.display = "none";
+      previewPlaceholder.style.display = "block";
+
+      if (placeholderTitle) {
+        placeholderTitle.textContent = "IMAGE NOT FOUND";
+      }
+
+    };
+
+
+    mainImage.src = imagePath;
+
+    mainImage.alt =
+      `${project.title} preview ${currentImageIndex + 1}`;
+
+
+    // Update filename
+    if (previewFilename) {
+      previewFilename.textContent =
+        imagePath.split("/").pop();
+    }
+
+
+    // Show navigation only for multiple images
+    const hasMultipleImages = projectImages.length > 1;
+
+    if (previewPrev) {
+      previewPrev.classList.toggle("is-hidden", !hasMultipleImages);
+    }
+
+    if (previewNext) {
+      previewNext.classList.toggle("is-hidden", !hasMultipleImages);
+    }
+
+    if (previewDots) {
+
+      previewDots.classList.toggle("is-hidden", !hasMultipleImages);
+
+      renderImageDots();
+
+    }
+
+    // Update lightbox if currently open
+    if (
+      lightbox &&
+      lightbox.classList.contains("is-open")
+    ) {
+      updateLightbox();
+    }
+
+  }
+
+
+  /* =========================================
+     CAROUSEL NAVIGATION
+  ========================================= */
+
+  if (previewNext) {
+
+    previewNext.addEventListener("click", () => {
+      showProjectImage(currentImageIndex + 1);
+    });
+
+  }
+
+  if (previewPrev) {
+
+    previewPrev.addEventListener("click", () => {
+      showProjectImage(currentImageIndex - 1);
+    });
+
+  }
+
+
+  /* =========================================
+     CAROUSEL SWIPE SUPPORT
+  ========================================= */
+
+  if (previewImageWrap) {
+
+    previewImageWrap.addEventListener("touchstart", event => {
+
+      touchStartX = event.changedTouches[0].screenX;
+
+    }, { passive: true });
+
+
+    previewImageWrap.addEventListener("touchend", event => {
+
+      const swipeDistance =
+        event.changedTouches[0].screenX - touchStartX;
+
+      if (
+        Math.abs(swipeDistance) < 50 ||
+        projectImages.length <= 1
+      ) {
+        return;
+      }
+
+      showProjectImage(
+        currentImageIndex + (swipeDistance < 0 ? 1 : -1)
+      );
+
+    }, { passive: true });
+
+
+    // Keyboard accessibility
+    previewImageWrap.setAttribute("tabindex", "0");
+
+    previewImageWrap.addEventListener("keydown", event => {
+
+      if (projectImages.length <= 1) return;
+
+      if (event.key === "ArrowRight") {
+        showProjectImage(currentImageIndex + 1);
+      }
+
+      if (event.key === "ArrowLeft") {
+        showProjectImage(currentImageIndex - 1);
+      }
+
+    });
+
+  }
+
+
+  /* =========================================
+     IMAGE LIGHTBOX
+  ========================================= */
+
+  const lightbox =
+    document.getElementById("imageLightbox");
+
+  const lightboxClose =
+    document.getElementById("lightboxClose");
+
+  const lightboxCounter =
+    document.getElementById("lightboxCounter");
+
+  const lightboxPrev =
+    document.getElementById("lightboxPrev");
+
+  const lightboxImage =
+    document.getElementById("lightboxImage");
+
+  const lightboxNext =
+    document.getElementById("lightboxNext");
+
+  const lightboxCaption =
+    document.getElementById("lightboxCaption");
+
+
+  /* =========================================
+     UPDATE LIGHTBOX CONTENT
+  ========================================= */
+
+  function updateLightbox() {
+
+    if (!lightboxImage || !projectImages.length) return;
+
+    const imagePath = projectImages[currentImageIndex];
+    console.log("Index:", currentImageIndex);
+    console.log("Image:", imagePath);
+
+    lightboxImage.src = imagePath;
+
+    lightboxImage.alt =
+      `${project.title} preview ${currentImageIndex + 1}`;
+
+    if (lightboxCaption) {
+      lightboxCaption.textContent =
+        `${project.title} · ${imagePath.split("/").pop()}`;
+    }
+
+    if (lightboxCounter) {
+
+  const currentNumber = projectImages.indexOf(
+    lightboxImage.src.split("/").pop()
+  );
+
+  lightboxCounter.textContent =
+    `${String(currentImageIndex + 1).padStart(2, "0")} / ${String(projectImages.length).padStart(2, "0")}`;
+
+}
+
+    const hasMultipleImages = projectImages.length > 1;
+
+    if (lightboxPrev) {
+      lightboxPrev.classList.toggle("is-hidden", !hasMultipleImages);
+    }
+
+    if (lightboxNext) {
+      lightboxNext.classList.toggle("is-hidden", !hasMultipleImages);
+    }
+
+    if (lightboxCounter) {
+      lightboxCounter.classList.toggle("is-hidden", !hasMultipleImages);
+    }
+
+  }
+
+
+  /* =========================================
+     OPEN LIGHTBOX
+  ========================================= */
+
+  function openLightbox() {
+
+    if (!lightbox || !projectImages.length) return;
+
+    updateLightbox();
+
+    lightbox.classList.add("is-open");
+
+    lightbox.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("lightbox-open");
+
+  }
+
+
+  /* =========================================
+     CLOSE LIGHTBOX
+  ========================================= */
+
+  function closeLightbox() {
+
+    if (!lightbox) return;
+
+    lightbox.classList.remove("is-open");
+
+    lightbox.setAttribute("aria-hidden", "true");
+
+    document.body.classList.remove("lightbox-open");
+
+  }
+
+/* =========================================
+   LIGHTBOX EVENTS
+========================================= */
+
+// Open when clicking the main project image
+if (mainImage) {
+  mainImage.addEventListener("click", openLightbox);
+}
+
+
+// Close button
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
+
+
+// Previous image
+if (lightboxPrev) {
+  lightboxPrev.addEventListener("click", () => {
+
+    if (currentImageIndex > 0) {
+      currentImageIndex--;
+    } else {
+      currentImageIndex = projectImages.length - 1;
+    }
+
+    updateLightbox();
+
+    showProjectImage(currentImageIndex);
+
+  });
+}
+
+
+// Next image
+if (lightboxNext) {
+  lightboxNext.addEventListener("click", () => {
+
+    currentImageIndex =
+      (currentImageIndex + 1) % projectImages.length;
+
+    updateLightbox();
+
+    showProjectImage(currentImageIndex);
+
+  });
+}
+
+
+// Close when clicking the background
+if (lightbox) {
+  lightbox.addEventListener("click", event => {
+
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+
+  });
+}
+
+
+/* =========================================
+   LIGHTBOX KEYBOARD SUPPORT
+========================================= */
+
+document.addEventListener("keydown", event => {
+
+  if (!lightbox || !lightbox.classList.contains("is-open")) {
+    return;
+  }
+
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+
+  if (event.key === "ArrowRight" && projectImages.length > 1) {
+
+    currentImageIndex =
+      (currentImageIndex + 1) % projectImages.length;
+
+    updateLightbox();
+    showProjectImage(currentImageIndex);
+
+  }
+
+  if (event.key === "ArrowLeft" && projectImages.length > 1) {
+
+    currentImageIndex =
+      (currentImageIndex - 1 + projectImages.length) % projectImages.length;
+
+    updateLightbox();
+    showProjectImage(currentImageIndex);
+
+  }
+
+});
+
+
+  /* =========================================
+     INITIALIZE PROJECT IMAGE
+  ========================================= */
+
+  showProjectImage(0);
 
 }
 
@@ -919,7 +1554,9 @@ if (!project) {
 const yearElement = document.getElementById("year");
 
 if (yearElement) {
+
   yearElement.textContent = new Date().getFullYear();
+
 }
 
 
