@@ -1438,3 +1438,60 @@ html[lang="en"] .lang-id {
     transition: none;
   }
 }
+
+/* =========================================
+   PROJECT EXTERNAL ACTION
+========================================= */
+
+.project-external-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.btn-project-external {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 11px 20px;
+
+  background: rgba(83, 140, 117, 0.12);
+  color: var(--accent, #6fa58b);
+
+  border: 1px solid rgba(111, 165, 139, 0.25);
+  border-radius: 50px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.btn-project-external:hover {
+  background: rgba(83, 140, 117, 0.2);
+  color: var(--accent, #6fa58b);
+}
+
+.btn-project-external span[aria-hidden="true"] {
+  font-size: 14px;
+  font-weight: 400;
+  transition: transform 0.25s ease;
+}
+
+.btn-project-external:hover span[aria-hidden="true"] {
+  transform: translate(3px, -2px);
+}
+
+/* Light Mode */
+[data-theme="light"] .btn-project-external {
+  background: rgba(39, 105, 78, 0.07);
+  color: #27694e;
+  border-color: rgba(39, 105, 78, 0.16);
+}
+
+[data-theme="light"] .btn-project-external:hover {
+  background: rgba(39, 105, 78, 0.13);
+}
